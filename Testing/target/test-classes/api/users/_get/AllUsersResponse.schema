@@ -1,0 +1,184 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "users": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "firstName": {
+              "type": "string"
+            },
+            "lastName": {
+              "type": "string"
+            },
+            "maidenName": {
+              "type": "string"
+            },
+            "age": {
+              "type": "integer"
+            },
+            "gender": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "username": {
+              "type": "string"
+            },
+            "password": {
+              "type": "string"
+            },
+            "birthdate": {
+              "type": "string"
+            },
+            "image": {
+              "type": "string"
+            },
+            "bloodGroup": {
+              "type": "string"
+            },
+            "height": {
+              "type": "integer"
+            },
+            "weight": {
+              "type": "number"
+            },
+            "eyeColor": {
+              "type": "string"
+            },
+            "hair": {
+              "type": "object",
+              "properties": {
+                "color": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                }
+              }
+            },
+            "domain": {
+              "type": "string"
+            },
+            "ip": {
+              "type": "string"
+            },
+            "address": {
+              "type": "object",
+              "properties": {
+                "address": {
+                  "type": "string"
+                },
+                "city": {
+                  "type": "string"
+                },
+                "coordinates": {
+                  "type": "object",
+                  "properties": {
+                    "lat": {
+                      "type": "number"
+                    },
+                    "lng": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "postalCode": {
+                  "type": "string"
+                },
+                "state": {
+                  "type": "string"
+                }
+              }
+            },
+            "macAddress": {
+              "type": "string"
+            },
+            "university": {
+              "type": "string"
+            },
+            "bank": {
+              "type": "object",
+              "properties": {
+                "cardExpire": {
+                  "type": "string"
+                },
+                "cardNumber": {
+                  "type": "string"
+                },
+                "cardType": {
+                  "type": "string"
+                },
+                "currency": {
+                  "type": "string"
+                },
+                "iban": {
+                  "type": "string"
+                }
+              }
+            },
+            "company": {
+              "type": "object",
+              "properties": {
+                "address": {
+                  "type": "object",
+                  "properties": {
+                    "address": {
+                      "type": "string"
+                    },
+                    "city": {
+                      "type": "string"
+                    },
+                    "coordinates": {
+                      "type": "object",
+                      "properties": {
+                        "lat": {
+                          "type": "number"
+                        },
+                        "long": {
+                          "type": "number"
+                        }
+                      }
+                    },
+                    "postalCode": {
+                      "type": "string"
+                    },
+                    "state": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "department": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                }
+              }
+            },
+            "ein": {
+              "type": "string"
+            },
+            "ssn": {
+              "type": "string"
+            },
+            "userAgent": {
+              "type": "string"
+            }
+        }
+      }
+    }
+  }
+}

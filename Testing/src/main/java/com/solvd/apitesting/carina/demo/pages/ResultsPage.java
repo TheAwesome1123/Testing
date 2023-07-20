@@ -1,4 +1,4 @@
-package com.solvd.apitesting.carina.demo.web;
+package com.solvd.apitesting.carina.demo.pages;
 
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import com.zebrunner.carina.webdriver.gui.AbstractPage;

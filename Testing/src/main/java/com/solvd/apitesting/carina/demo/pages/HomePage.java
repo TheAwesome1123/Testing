@@ -20,22 +20,25 @@ public class HomePage extends AbstractPage {
         super(webDriver);
     }
 
-    public void makeSearch(String search) {
+    public ResultsPage makeSearch(String search) {
         searchBar.assertElementPresent();
         searchBar.click();
         searchBar.type(search);
         searchBar.sendKeys(Keys.ENTER);
+        return new ResultsPage(getDriver());
     }
 
-    public void clickSignInButton() {
+    public SignInPage clickSignInButton() {
         signInButton.click();
+        return new SignInPage(getDriver());
     }
 
     public void clickHotbar() {
         hotbar.click();
     }
 
-    public void clickTrendingButton() {
+    public TrendingPage clickTrendingButton() {
         trendingButton.click();
+        return new TrendingPage(getDriver());
     }
 }

@@ -18,7 +18,6 @@ import org.testng.annotations.Test;
 
 public class WebTest implements IAbstractTest {
     private static final Logger LOGGER = LogManager.getLogger(WebTest.class);
-    private static final WebDriver webDriver = new ChromeDriver();
     private static final HomePageService HOME_PAGE_SERVICE = new HomePageService();
     private static final SignInPageService SIGN_IN_PAGE_SERVICE = new SignInPageService();
     private static final ResultsPageService RESULTS_PAGE_SERVICE = new ResultsPageService();
@@ -26,51 +25,34 @@ public class WebTest implements IAbstractTest {
 
     @Test
     public void searchForVideo() {
-        try {
-            ResultsPage resultsPage = RESULTS_PAGE_SERVICE.getToResultsPage(webDriver, "mute city");
-            resultsPage.clickOnVideo();
-            Thread.sleep(5000);
-            webDriver.quit();
-        }
-        catch (InterruptedException e) {
-            LOGGER.info(e);
-        }
+        ResultsPage resultsPage = RESULTS_PAGE_SERVICE.getToResultsPage("mute city");
+        resultsPage.clickOnVideo();
     }
 
     @Test
     public void signInWithInvalidEmail() {
-        SignInPage signInPage = SIGN_IN_PAGE_SERVICE.goToSignInPage(webDriver);
+        SignInPage signInPage = SIGN_IN_PAGE_SERVICE.goToSignInPage();
         signInPage.inputEmail("test");
         Assert.assertTrue(signInPage.isEmailErrorMessagePresent(), "Valid email.");
-        webDriver.quit();
     }
 
     @Test
     public void signInWithEmail() {
-        SignInPage signInPage = SIGN_IN_PAGE_SERVICE.goToSignInPage(webDriver);
+        SignInPage signInPage = SIGN_IN_PAGE_SERVICE.goToSignInPage();
         signInPage.inputEmail("sdn4900@gmail.com");
         Assert.assertTrue(signInPage.isInsecureBrowserWarningPresent(), "Secure browser.");
-        webDriver.quit();
     }
 
     @Test
     public void goToHomePageFromVideoPage() {
-        try {
-            VideoPage videoPage = VIDEO_PAGE_SERVICE.getVideoPage(webDriver);
-            videoPage.goToHomePage();
-            Thread.sleep(5000);
-            webDriver.quit();
-        }
-        catch (InterruptedException e) {
-            LOGGER.info(e);
-        }
+        VideoPage videoPage = VIDEO_PAGE_SERVICE.getVideoPage();
+        videoPage.goToHomePage();
     }
 
     @Test
     public void goToTrendingPage() {
-        HomePage homePage = HOME_PAGE_SERVICE.openHomePage(webDriver);
+        HomePage homePage = HOME_PAGE_SERVICE.openHomePage();
         homePage.clickHotbar();
         homePage.clickTrendingButton();
-        webDriver.quit();
     }
 }

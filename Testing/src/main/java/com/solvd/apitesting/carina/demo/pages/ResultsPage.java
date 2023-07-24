@@ -13,7 +13,8 @@ public class ResultsPage extends AbstractPage {
         super(webDriver);
     }
 
-    public void clickOnVideo() {
+    public VideoPage clickOnVideo() {
         this.video.click();
+        return new VideoPage(getDriver());
     }
 }

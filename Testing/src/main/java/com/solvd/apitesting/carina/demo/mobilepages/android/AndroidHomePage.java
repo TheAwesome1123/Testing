@@ -1,36 +1,43 @@
 package com.solvd.apitesting.carina.demo.mobilepages.android;
 
 import com.solvd.apitesting.carina.demo.mobilepages.common.HomePageBase;
-import com.solvd.apitesting.carina.demo.mobilepages.common.uielements.MenuButton;
-import com.solvd.apitesting.carina.demo.mobilepages.common.uielements.SearchBar;
-import com.solvd.apitesting.carina.demo.mobilepages.common.uielements.SignInButton;
-import com.solvd.apitesting.carina.demo.mobilepages.common.uielements.TrendingButton;
+import com.solvd.apitesting.carina.demo.mobilepages.common.ProductsPageBase;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.FindBy;
 
 public class AndroidHomePage extends HomePageBase {
-    private SearchBar searchBar;
-    private MenuButton menuButton;
-    private TrendingButton trendingButton;
-    private ExtendedWebElement profileButton;
+    @FindBy(xpath = "//android.widget.EditText[@content-desc=\"test-Username\"]")
+    private ExtendedWebElement emailInput;
+    @FindBy(xpath = "//android.widget.EditText[@content-desc=\"test-Password\"]")
+    private ExtendedWebElement passwordInput;
+    @FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"test-LOGIN\"]")
+    private ExtendedWebElement loginButton;
+    @FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"test-Error message\"]/android.widget.TextView")
+    private ExtendedWebElement errorMessage;
 
-    public AndroidHomePage(WebDriver webDriver) {
-        super(webDriver);
+    public AndroidHomePage(WebDriver driver) {
+        super(driver);
     }
 
-    public AndroidResultsPage makeSearch(String search) {
-        return new AndroidResultsPage(getDriver());
+    @Override
+    public void inputCredentials(String email, String password) {
+        emailInput.click();
+        emailInput.type(email);
+        passwordInput.click();
+        passwordInput.type(password);
     }
 
-    public AndroidSignInPage goToSignInPage() {
-        return new AndroidSignInPage(getDriver());
+    @Override
+    public ProductsPageBase clickLoginButton() {
+        loginButton.click();
+        return new AndroidProductsPage(getDriver());
     }
 
-    public void clickMenuButton() {
-
+    @Override
+    public boolean checkIfErrorMessagePresent() {
+        return errorMessage.isElementPresent();
     }
 
-    public AndroidTrendingPage goToTrendingPage() {
-        return new AndroidTrendingPage(getDriver());
-    }
+
 }

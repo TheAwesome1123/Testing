@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -37,7 +38,7 @@ public class WebSampleTest implements IAbstractTest {
     @TestLabel(name = "feature", value = { "web", "regression" })
     public void testModelSpecs() {
         // Open GSM Arena home page and verify page is opened
-        HomePageBase homePage = initPage(getDriver(), HomePageBase.class);
+        HomePageBase homePage = initPage(new ChromeDriver(), HomePageBase.class);
         homePage.open();
         Assert.assertTrue(homePage.isPageOpened(), "Home page is not opened");
 

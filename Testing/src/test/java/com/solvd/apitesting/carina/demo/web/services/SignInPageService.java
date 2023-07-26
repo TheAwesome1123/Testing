@@ -1,9 +1,7 @@
 package com.solvd.apitesting.carina.demo.web.services;
 
-import com.solvd.apitesting.carina.demo.pages.HomePage;
-import com.solvd.apitesting.carina.demo.pages.SignInPage;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import com.solvd.apitesting.carina.demo.webpages.HomePage;
+import com.solvd.apitesting.carina.demo.webpages.SignInPage;
 
 public class SignInPageService {
     public SignInPage goToSignInPage() {

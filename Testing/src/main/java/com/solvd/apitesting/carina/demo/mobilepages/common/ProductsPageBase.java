@@ -13,4 +13,6 @@ public abstract class ProductsPageBase extends AbstractPage {
     public abstract void addBackpackToCart();
     public abstract void addBikeLightToCart();
     public abstract CartPageBase goToCart();
+    public abstract HomePageBase logout();
+    public abstract void sortFromLowToHighPrice();
 }

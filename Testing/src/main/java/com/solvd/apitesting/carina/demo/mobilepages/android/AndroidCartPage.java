@@ -1,6 +1,8 @@
 package com.solvd.apitesting.carina.demo.mobilepages.android;
 
 import com.solvd.apitesting.carina.demo.mobilepages.common.CartPageBase;
+import com.solvd.apitesting.carina.demo.mobilepages.common.CheckoutInfoPageBase;
+import com.solvd.apitesting.carina.demo.mobilepages.common.ProductsPageBase;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import com.zebrunner.carina.webdriver.decorator.PageOpeningStrategy;
 import org.openqa.selenium.WebDriver;
@@ -11,6 +13,10 @@ public class AndroidCartPage extends CartPageBase {
     private ExtendedWebElement cartHeader;
     @FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"test-REMOVE\"]/android.widget.TextView")
     private ExtendedWebElement removeFromCartButton;
+    @FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"test-CHECKOUT\"]")
+    private ExtendedWebElement checkoutButton;
+    @FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"test-CONTINUE SHOPPING\"]/android.widget.TextView")
+    private ExtendedWebElement continueShoppingButton;
 
     public AndroidCartPage(WebDriver driver) {
         super(driver);
@@ -25,19 +31,15 @@ public class AndroidCartPage extends CartPageBase {
         }
     }
 
-    public ExtendedWebElement getCartHeader() {
-        return cartHeader;
+    @Override
+    public CheckoutInfoPageBase goToCheckout() {
+        checkoutButton.click();
+        return new AndroidCheckoutInfoPage(getDriver());
     }
 
-    public void setCartHeader(ExtendedWebElement cartHeader) {
-        this.cartHeader = cartHeader;
-    }
-
-    public ExtendedWebElement getRemoveFromCartButton() {
-        return removeFromCartButton;
-    }
-
-    public void setRemoveFromCartButton(ExtendedWebElement removeFromCartButton) {
-        this.removeFromCartButton = removeFromCartButton;
+    @Override
+    public ProductsPageBase continueShopping() {
+        continueShoppingButton.click();
+        return new AndroidProductsPage(getDriver());
     }
 }

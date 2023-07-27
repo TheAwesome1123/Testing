@@ -16,6 +16,8 @@ public abstract class CartPageBase extends AbstractPage {
     }
 
     public abstract void removeItems();
+    public abstract CheckoutInfoPageBase goToCheckout();
+    public abstract ProductsPageBase continueShopping();
 
     public ExtendedWebElement getCartHeader() {
         return cartHeader;

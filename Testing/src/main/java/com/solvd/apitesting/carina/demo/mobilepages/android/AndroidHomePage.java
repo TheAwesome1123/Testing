@@ -3,6 +3,7 @@ package com.solvd.apitesting.carina.demo.mobilepages.android;
 import com.solvd.apitesting.carina.demo.mobilepages.common.HomePageBase;
 import com.solvd.apitesting.carina.demo.mobilepages.common.ProductsPageBase;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
+import com.zebrunner.carina.webdriver.decorator.PageOpeningStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
@@ -18,6 +19,9 @@ public class AndroidHomePage extends HomePageBase {
 
     public AndroidHomePage(WebDriver driver) {
         super(driver);
+        setPageOpeningStrategy(PageOpeningStrategy.BY_ELEMENT);
+        setUiLoadedMarker(emailInput);
+
     }
 
     @Override
@@ -33,11 +37,4 @@ public class AndroidHomePage extends HomePageBase {
         loginButton.click();
         return new AndroidProductsPage(getDriver());
     }
-
-    @Override
-    public boolean checkIfErrorMessagePresent() {
-        return errorMessage.isElementPresent();
-    }
-
-
 }

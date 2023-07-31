@@ -3,26 +3,23 @@ package com.solvd.apitesting.carina.demo.mobilepages.common;
 import com.solvd.apitesting.carina.demo.mobilepages.android.AndroidHomePage;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import com.zebrunner.carina.webdriver.gui.AbstractUIObject;
+import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 public class HeaderBar extends AbstractUIObject {
     @FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"test-Menu\"]")
     private ExtendedWebElement menuButton;
-    @FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"test-LOGOUT\"]")
-    private ExtendedWebElement logoutButton;
+    @FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"test-Cart\"]/android.view.ViewGroup/android.widget.ImageView")
+    private ExtendedWebElement cartButton;
 
-    public HeaderBar(WebDriver driver) {
-        super(driver);
+    public HeaderBar(WebDriver driver, SearchContext searchContext) {
+        super(driver, searchContext);
     }
 
-    public void clickMenuButton() {
+    public MenuOptions clickMenuButton() {
         menuButton.click();
-    }
-
-    public HomePageBase clickLogoutButton() {
-        logoutButton.click();
-        return new AndroidHomePage(getDriver());
+        return new MenuOptions(getDriver());
     }
 
     public ExtendedWebElement getMenuButton() {
@@ -33,11 +30,11 @@ public class HeaderBar extends AbstractUIObject {
         this.menuButton = menuButton;
     }
 
-    public ExtendedWebElement getLogoutButton() {
-        return logoutButton;
+    public ExtendedWebElement getCartButton() {
+        return cartButton;
     }
 
-    public void setLogoutButton(ExtendedWebElement logoutButton) {
-        this.logoutButton = logoutButton;
+    public void setCartButton(ExtendedWebElement cartButton) {
+        this.cartButton = cartButton;
     }
 }

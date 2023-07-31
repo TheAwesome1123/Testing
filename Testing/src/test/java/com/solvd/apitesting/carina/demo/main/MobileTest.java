@@ -1,6 +1,5 @@
 package com.solvd.apitesting.carina.demo.main;
 
-import com.solvd.apitesting.carina.demo.mobilepages.android.AndroidHomePage;
 import com.solvd.apitesting.carina.demo.mobilepages.common.*;
 import com.zebrunner.carina.core.IAbstractTest;
 import com.zebrunner.carina.utils.mobile.IMobileUtils;
@@ -39,7 +38,7 @@ public class MobileTest implements IAbstractTest, IMobileUtils {
         ProductsPageBase productsPage = getPastHomePage("standard_user", "secret_sauce");
         Assert.assertTrue(productsPage.isPageOpened());
 
-        HomePageBase homePage2 = productsPage.logout();
+        HomePageBase homePage2 = productsPage.goToMenu();
         Assert.assertTrue(homePage2.isPageOpened());
     }
 
@@ -80,7 +79,7 @@ public class MobileTest implements IAbstractTest, IMobileUtils {
 
     // Helper method(s).
     public ProductsPageBase getPastHomePage(String username, String password) {
-        AndroidHomePage homePage = new AndroidHomePage(getDriver());
+        HomePageBase homePage = initPage(getDriver(), HomePageBase.class);
         homePage.inputCredentials(username, password);
         return homePage.clickLoginButton();
     }

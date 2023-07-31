@@ -1,12 +1,15 @@
 package com.solvd.apitesting.carina.demo.mobilepages.android;
 
+import com.solvd.apitesting.carina.demo.mobile.gui.pages.common.CarinaDescriptionPageBase;
 import com.solvd.apitesting.carina.demo.mobilepages.common.HomePageBase;
 import com.solvd.apitesting.carina.demo.mobilepages.common.ProductsPageBase;
+import com.zebrunner.carina.utils.factory.DeviceType;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import com.zebrunner.carina.webdriver.decorator.PageOpeningStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
+@DeviceType(pageType = DeviceType.Type.ANDROID_PHONE, parentClass = HomePageBase.class)
 public class AndroidHomePage extends HomePageBase {
     @FindBy(xpath = "//android.widget.EditText[@content-desc=\"test-Username\"]")
     private ExtendedWebElement emailInput;

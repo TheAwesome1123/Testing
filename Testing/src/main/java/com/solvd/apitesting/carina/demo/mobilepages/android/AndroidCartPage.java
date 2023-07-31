@@ -1,13 +1,16 @@
 package com.solvd.apitesting.carina.demo.mobilepages.android;
 
+import com.solvd.apitesting.carina.demo.mobile.gui.pages.common.CarinaDescriptionPageBase;
 import com.solvd.apitesting.carina.demo.mobilepages.common.CartPageBase;
 import com.solvd.apitesting.carina.demo.mobilepages.common.CheckoutInfoPageBase;
 import com.solvd.apitesting.carina.demo.mobilepages.common.ProductsPageBase;
+import com.zebrunner.carina.utils.factory.DeviceType;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import com.zebrunner.carina.webdriver.decorator.PageOpeningStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
+@DeviceType(pageType = DeviceType.Type.ANDROID_PHONE, parentClass = AndroidCartPage.class)
 public class AndroidCartPage extends CartPageBase {
     @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.TextView")
     private ExtendedWebElement cartHeader;

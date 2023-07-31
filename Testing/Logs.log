@@ -13845,3 +13845,1315 @@ PASS: element 'otherRadioButton' is clicked.
 TEST [Testing - testUIElements] PASSED at [14:25:18 2023-07-25]
 INFO: '**************** Test execution summary ****************'.
 RESULT #1: TEST [Testing - testUIElements] PASS [screenshots=file://C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\.\reports\1690320259540/d8fd0a28-badc-4ce4-b1f3-f5d1c1d2da73/report.html | ]
+Reflections took 176 ms to scan 10 urls, producing 122 keys and 364 values
+
+============= Basic configuration =============
+env=HOMEWORK
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+url=https://www.youtube.com/
+selenium_url=http://localhost:4723
+auto_screenshot=true
+explicit_timeout=100
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+app=https://qaprosoft.s3-us-west-2.amazonaws.com/carinademoexample.apk
+automationName=uiautomator2
+platformName=ANDROID
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 2016 ms to scan 221 urls, producing 12391 keys and 53428 values
+[TestNG] Running:
+  C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
+
+Set thread-count=1
+Set data-provider-thread-count=1
+CARINA_CORE_VERSION: 1.1.3
+Reporting disabled: using no op test run registrar
+TEST [Testing - searchForVideo] STARTED at [13:23:10 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - searchForVideo] PASSED at [13:23:24 2023-07-27]
+INFO: '**************** Test execution summary ****************'.
+RESULT #1: TEST [Testing - searchForVideo] PASS []
+Reflections took 102 ms to scan 10 urls, producing 122 keys and 364 values
+
+============= Basic configuration =============
+env=HOMEWORK
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+url=https://www.youtube.com/
+selenium_url=http://localhost:4723
+auto_screenshot=true
+explicit_timeout=100
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+app=https://qaprosoft.s3-us-west-2.amazonaws.com/carinademoexample.apk
+automationName=uiautomator2
+platformName=ANDROID
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1458 ms to scan 221 urls, producing 12391 keys and 53428 values
+[TestNG] Running:
+  C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
+
+Set thread-count=1
+Set data-provider-thread-count=1
+CARINA_CORE_VERSION: 1.1.3
+Reporting disabled: using no op test run registrar
+TEST [Testing - searchForVideo] STARTED at [13:24:20 2023-07-27]
+TEST [Testing - searchForVideo] FAILED at [13:24:23 2023-07-27] - Zebrunner didn't provide a selenium hub url.
+
+com.zebrunner.agent.core.webdriver.RemoteWebDriverFactory.lambda$getMandatorySeleniumHubUrl$0(RemoteWebDriverFactory.java:32)
+java.base/java.util.Optional.orElseThrow(Optional.java:401)
+com.zebrunner.agent.core.webdriver.RemoteWebDriverFactory.getMandatorySeleniumHubUrl(RemoteWebDriverFactory.java:32)
+com.zebrunner.agent.core.webdriver.RemoteWebDriverFactory.getDriver(RemoteWebDriverFactory.java:48)
+com.solvd.apitesting.carina.demo.web.services.HomePageService.openHomePage(HomePageService.java:12)
+com.solvd.apitesting.carina.demo.web.services.ResultsPageService.getToResultsPage(ResultsPageService.java:9)
+com.solvd.apitesting.carina.demo.main.WebTest.searchForVideo(WebTest.java:26)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:564)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+org.testng.TestRunner.privateRun(TestRunner.java:829)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+org.testng.SuiteRunner.run(SuiteRunner.java:330)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+org.testng.TestNG.runSuites(TestNG.java:1099)
+org.testng.TestNG.run(TestNG.java:1067)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+INFO: '**************** Test execution summary ****************'.
+RESULT #1: TEST [Testing - searchForVideo] FAIL []
+Reflections took 129 ms to scan 10 urls, producing 122 keys and 364 values
+
+============= Basic configuration =============
+env=HOMEWORK
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+url=https://www.youtube.com/
+selenium_url=http://localhost:4723
+auto_screenshot=true
+explicit_timeout=100
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+app=https://qaprosoft.s3-us-west-2.amazonaws.com/carinademoexample.apk
+automationName=uiautomator2
+platformName=ANDROID
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1573 ms to scan 221 urls, producing 12391 keys and 53428 values
+[TestNG] Running:
+  C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
+
+Set thread-count=1
+Set data-provider-thread-count=1
+CARINA_CORE_VERSION: 1.1.3
+Reporting disabled: using no op test run registrar
+TEST [Testing - searchForVideo] STARTED at [13:26:13 2023-07-27]
+Starting driver session...
+Reflections took 1269 ms to scan 208 urls, producing 163 keys and 10732 values
+Failed to attach artifact reference 'app' to test run because it has not been started yet.
+TEST [Testing - searchForVideo] FAILED at [13:26:19 2023-07-27] - Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DESKTOP-D994MSR', ip: '192.168.86.167'
+
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:549)
+io.appium.java_client.AppiumDriver.startSession$original$hj3svqbE(AppiumDriver.java:274)
+io.appium.java_client.AppiumDriver.startSession$original$hj3svqbE$accessor$vaAOLb0L(AppiumDriver.java)
+io.appium.java_client.AppiumDriver$auxiliary$KQmfZ619.run(Unknown Source)
+com.zebrunner.agent.core.webdriver.StartSessionInterceptor.onSessionStart(StartSessionInterceptor.java:42)
+io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:154)
+io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:97)
+io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:227)
+com.zebrunner.carina.webdriver.core.factory.impl.MobileFactory.create(MobileFactory.java:125)
+com.zebrunner.carina.webdriver.core.factory.DriverFactory.create(DriverFactory.java:87)
+com.zebrunner.carina.webdriver.IDriverPool.createDriver(IDriverPool.java:364)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:117)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:80)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:68)
+com.solvd.apitesting.carina.demo.main.WebTest.searchForVideo(WebTest.java:27)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:564)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+org.testng.TestRunner.privateRun(TestRunner.java:829)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+org.testng.SuiteRunner.run(SuiteRunner.java:330)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+org.testng.TestNG.runSuites(TestNG.java:1099)
+org.testng.TestNG.run(TestNG.java:1067)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+INFO: '**************** Test execution summary ****************'.
+RESULT #1: TEST [Testing - searchForVideo] FAIL []
+Reflections took 104 ms to scan 10 urls, producing 122 keys and 364 values
+
+============= Basic configuration =============
+env=HOMEWORK
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+url=https://www.youtube.com/
+selenium_url=http://localhost:4723
+auto_screenshot=true
+explicit_timeout=100
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+app=https://qaprosoft.s3-us-west-2.amazonaws.com/carinademoexample.apk
+automationName=uiautomator2
+platformName=ANDROID
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1598 ms to scan 221 urls, producing 12391 keys and 53428 values
+[TestNG] Running:
+  C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
+
+Set thread-count=1
+Set data-provider-thread-count=1
+CARINA_CORE_VERSION: 1.1.3
+Reporting disabled: using no op test run registrar
+TEST [Testing - searchForVideo] STARTED at [13:27:23 2023-07-27]
+Starting driver session...
+Reflections took 1097 ms to scan 208 urls, producing 163 keys and 10732 values
+Failed to attach artifact reference 'app' to test run because it has not been started yet.
+TEST [Testing - searchForVideo] FAILED at [13:27:29 2023-07-27] - Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DESKTOP-D994MSR', ip: '192.168.86.167'
+
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:549)
+io.appium.java_client.AppiumDriver.startSession$original$tvLOGJxX(AppiumDriver.java:274)
+io.appium.java_client.AppiumDriver.startSession$original$tvLOGJxX$accessor$Xcvr1VW0(AppiumDriver.java)
+io.appium.java_client.AppiumDriver$auxiliary$z0txAm3x.run(Unknown Source)
+com.zebrunner.agent.core.webdriver.StartSessionInterceptor.onSessionStart(StartSessionInterceptor.java:42)
+io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:154)
+io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:97)
+io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:227)
+com.zebrunner.carina.webdriver.core.factory.impl.MobileFactory.create(MobileFactory.java:125)
+com.zebrunner.carina.webdriver.core.factory.DriverFactory.create(DriverFactory.java:87)
+com.zebrunner.carina.webdriver.IDriverPool.createDriver(IDriverPool.java:364)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:117)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:80)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:68)
+com.solvd.apitesting.carina.demo.main.WebTest.searchForVideo(WebTest.java:27)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:564)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+org.testng.TestRunner.privateRun(TestRunner.java:829)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+org.testng.SuiteRunner.run(SuiteRunner.java:330)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+org.testng.TestNG.runSuites(TestNG.java:1099)
+org.testng.TestNG.run(TestNG.java:1067)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+INFO: '**************** Test execution summary ****************'.
+RESULT #1: TEST [Testing - searchForVideo] FAIL []
+Reflections took 98 ms to scan 10 urls, producing 122 keys and 364 values
+
+============= Basic configuration =============
+env=HOMEWORK
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+url=https://www.youtube.com/
+selenium_url=http://localhost:4444/wd/hub
+auto_screenshot=true
+explicit_timeout=100
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+app=https://qaprosoft.s3-us-west-2.amazonaws.com/carinademoexample.apk
+automationName=uiautomator2
+platformName=ANDROID
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1499 ms to scan 221 urls, producing 12391 keys and 53428 values
+[TestNG] Running:
+  C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
+
+Set thread-count=1
+Set data-provider-thread-count=1
+CARINA_CORE_VERSION: 1.1.3
+Reporting disabled: using no op test run registrar
+TEST [Testing - searchForVideo] STARTED at [13:28:05 2023-07-27]
+Starting driver session...
+Reflections took 1232 ms to scan 208 urls, producing 163 keys and 10732 values
+Failed to attach artifact reference 'app' to test run because it has not been started yet.
+TEST [Testing - searchForVideo] FAILED at [13:33:08 2023-07-27] - Could not start a new session. Response code 500. Message: Could not start a new session. New session request timed out 
+Host info: host: 'DESKTOP-D994MSR', ip: '192.168.86.167'
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: unknown
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:locale=US, appium:language=en, platformName=ANDROID, appium:automationName=uiautomator2, appium:app=https://qaprosoft.s3-us-west-2.amazonaws.com/carinademoexample.apk}], desiredCapabilities=Capabilities {appium:app: https://qaprosoft.s3-us-wes..., appium:automationName: uiautomator2, appium:language: en, appium:locale: US, platformName: ANDROID}}]
+Capabilities {appium:app: https://qaprosoft.s3-us-wes..., appium:automationName: uiautomator2, appium:language: en, appium:locale: US, platformName: ANDROID}
+
+org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:564)
+io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+io.appium.java_client.AppiumDriver.startSession$original$BzkLKPVJ(AppiumDriver.java:274)
+io.appium.java_client.AppiumDriver.startSession$original$BzkLKPVJ$accessor$LENGhzUE(AppiumDriver.java)
+io.appium.java_client.AppiumDriver$auxiliary$cWtGZBEH.run(Unknown Source)
+com.zebrunner.agent.core.webdriver.StartSessionInterceptor.onSessionStart(StartSessionInterceptor.java:42)
+io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:154)
+io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:97)
+io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:227)
+com.zebrunner.carina.webdriver.core.factory.impl.MobileFactory.create(MobileFactory.java:125)
+com.zebrunner.carina.webdriver.core.factory.DriverFactory.create(DriverFactory.java:87)
+com.zebrunner.carina.webdriver.IDriverPool.createDriver(IDriverPool.java:364)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:117)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:80)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:68)
+com.solvd.apitesting.carina.demo.main.WebTest.searchForVideo(WebTest.java:27)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:564)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+org.testng.TestRunner.privateRun(TestRunner.java:829)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+org.testng.SuiteRunner.run(SuiteRunner.java:330)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+org.testng.TestNG.runSuites(TestNG.java:1099)
+org.testng.TestNG.run(TestNG.java:1067)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+INFO: '**************** Test execution summary ****************'.
+RESULT #1: TEST [Testing - searchForVideo] FAIL []
+Reflections took 99 ms to scan 10 urls, producing 122 keys and 364 values
+
+============= Basic configuration =============
+env=HOMEWORK
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+url=https://www.youtube.com/
+selenium_url=http://localhost:4444/wd/hub
+auto_screenshot=true
+explicit_timeout=100
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1445 ms to scan 221 urls, producing 12391 keys and 53428 values
+[TestNG] Running:
+  C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
+
+Set thread-count=1
+Set data-provider-thread-count=1
+CARINA_CORE_VERSION: 1.1.3
+Reporting disabled: using no op test run registrar
+TEST [Testing - searchForVideo] STARTED at [13:46:59 2023-07-27]
+TEST [Testing - searchForVideo] FAILED at [13:46:59 2023-07-27] - Cannot detect driver type. Capabilities 'browserName', 'platformName', 'udid' are empty.
+
+com.zebrunner.carina.webdriver.config.WebDriverConfiguration.getDriverType(WebDriverConfiguration.java:436)
+com.zebrunner.carina.webdriver.core.factory.DriverFactory.create(DriverFactory.java:68)
+com.zebrunner.carina.webdriver.IDriverPool.createDriver(IDriverPool.java:364)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:117)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:80)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:68)
+com.solvd.apitesting.carina.demo.main.WebTest.searchForVideo(WebTest.java:27)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:564)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+org.testng.TestRunner.privateRun(TestRunner.java:829)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+org.testng.SuiteRunner.run(SuiteRunner.java:330)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+org.testng.TestNG.runSuites(TestNG.java:1099)
+org.testng.TestNG.run(TestNG.java:1067)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+INFO: '**************** Test execution summary ****************'.
+RESULT #1: TEST [Testing - searchForVideo] FAIL []
+Reflections took 97 ms to scan 10 urls, producing 122 keys and 364 values
+
+============= Basic configuration =============
+env=HOMEWORK
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+url=https://www.youtube.com/
+selenium_url=http://localhost:4444/wd/hub
+auto_screenshot=true
+explicit_timeout=100
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1248 ms to scan 221 urls, producing 12391 keys and 53428 values
+[TestNG] Running:
+  C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
+
+Set thread-count=1
+Set data-provider-thread-count=1
+CARINA_CORE_VERSION: 1.1.3
+Reporting disabled: using no op test run registrar
+TEST [Testing - searchForVideo] STARTED at [13:47:36 2023-07-27]
+Starting driver session...
+TEST [Testing - searchForVideo] FAILED at [13:47:37 2023-07-27] - Could not start a new session. Response code 500. Message: Could not start a new session. Error while creating session with the driver service. Stopping driver service: chromedriver located at chromedriver, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: unknown 
+Host info: host: 'DESKTOP-D994MSR', ip: '192.168.86.167'
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: unknown
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --test-type, --start-maximized, --ignore-ssl-errors], extensions: []}}]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --test-type, --start-maximized, --ignore-ssl-errors], extensions: []}}
+
+org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+com.zebrunner.carina.webdriver.listener.EventFiringSeleniumCommandExecutor.execute(EventFiringSeleniumCommandExecutor.java:52)
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+org.openqa.selenium.remote.RemoteWebDriver.startSession$original$PbdcGZlj(RemoteWebDriver.java:227)
+org.openqa.selenium.remote.RemoteWebDriver.startSession$original$PbdcGZlj$accessor$wFB6JUE9(RemoteWebDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver$auxiliary$f7hJ0yat.run(Unknown Source)
+com.zebrunner.agent.core.webdriver.StartSessionInterceptor.onSessionStart(StartSessionInterceptor.java:42)
+org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:154)
+com.zebrunner.carina.webdriver.core.factory.impl.DesktopFactory.create(DesktopFactory.java:85)
+com.zebrunner.carina.webdriver.core.factory.DriverFactory.create(DriverFactory.java:87)
+com.zebrunner.carina.webdriver.IDriverPool.createDriver(IDriverPool.java:364)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:117)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:80)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:68)
+com.solvd.apitesting.carina.demo.main.WebTest.searchForVideo(WebTest.java:27)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:564)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+org.testng.TestRunner.privateRun(TestRunner.java:829)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+org.testng.SuiteRunner.run(SuiteRunner.java:330)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+org.testng.TestNG.runSuites(TestNG.java:1099)
+org.testng.TestNG.run(TestNG.java:1067)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+INFO: '**************** Test execution summary ****************'.
+RESULT #1: TEST [Testing - searchForVideo] FAIL []
+Reflections took 108 ms to scan 10 urls, producing 122 keys and 364 values
+
+============= Basic configuration =============
+env=HOMEWORK
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+url=https://www.youtube.com/
+selenium_url=http://localhost:4444/wd/hub
+auto_screenshot=true
+explicit_timeout=100
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1625 ms to scan 221 urls, producing 12391 keys and 53428 values
+[TestNG] Running:
+  C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
+
+Set thread-count=1
+Set data-provider-thread-count=1
+CARINA_CORE_VERSION: 1.1.3
+Reporting disabled: using no op test run registrar
+TEST [Testing - searchForVideo] STARTED at [13:49:03 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - searchForVideo] PASSED at [13:49:13 2023-07-27]
+INFO: '**************** Test execution summary ****************'.
+RESULT #1: TEST [Testing - searchForVideo] PASS []
+Reflections took 97 ms to scan 10 urls, producing 122 keys and 364 values
+
+============= Basic configuration =============
+env=HOMEWORK
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+url=https://www.youtube.com/
+selenium_url=http://localhost:4444/wd/hub
+auto_screenshot=true
+explicit_timeout=100
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1549 ms to scan 221 urls, producing 12391 keys and 53428 values
+[TestNG] Running:
+  C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
+
+Set thread-count=1
+Set data-provider-thread-count=1
+CARINA_CORE_VERSION: 1.1.3
+Reporting disabled: using no op test run registrar
+TEST [Testing - searchForVideo] STARTED at [13:50:07 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - searchForVideo] PASSED at [13:50:16 2023-07-27]
+INFO: '**************** Test execution summary ****************'.
+RESULT #1: TEST [Testing - searchForVideo] PASS []
+Reflections took 111 ms to scan 10 urls, producing 122 keys and 364 values
+
+============= Basic configuration =============
+env=HOMEWORK
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+url=https://www.youtube.com/
+selenium_url=http://localhost:4444/wd/hub
+auto_screenshot=true
+explicit_timeout=100
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1488 ms to scan 221 urls, producing 12391 keys and 53428 values
+[TestNG] Running:
+  C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
+
+Set thread-count=1
+Set data-provider-thread-count=1
+CARINA_CORE_VERSION: 1.1.3
+Reporting disabled: using no op test run registrar
+TEST [Testing - goToTrendingPage] STARTED at [14:02:54 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - goToTrendingPage] PASSED at [14:03:01 2023-07-27]
+INFO: '**************** Test execution summary ****************'.
+RESULT #1: TEST [Testing - goToTrendingPage] PASS []
+Reflections took 135 ms to scan 10 urls, producing 122 keys and 364 values
+
+============= Basic configuration =============
+env=HOMEWORK
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+url=https://www.youtube.com/
+selenium_url=http://localhost:4444/wd/hub
+auto_screenshot=true
+explicit_timeout=100
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 2619 ms to scan 221 urls, producing 12391 keys and 53428 values
+[TestNG] Running:
+  C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
+
+Set thread-count=1
+Set data-provider-thread-count=1
+CARINA_CORE_VERSION: 1.1.3
+Reporting disabled: using no op test run registrar
+TEST [Testing - goToTrendingPage] STARTED at [14:03:29 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - goToTrendingPage] PASSED at [14:03:38 2023-07-27]
+INFO: '**************** Test execution summary ****************'.
+RESULT #1: TEST [Testing - goToTrendingPage] PASS []
+Reflections took 133 ms to scan 10 urls, producing 122 keys and 364 values
+
+============= Basic configuration =============
+env=HOMEWORK
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+url=https://www.youtube.com/
+selenium_url=http://localhost:4444/wd/hub
+auto_screenshot=true
+explicit_timeout=100
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1599 ms to scan 221 urls, producing 12392 keys and 53429 values
+[TestNG] Running:
+  C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
+
+Set thread-count=1
+Set data-provider-thread-count=1
+CARINA_CORE_VERSION: 1.1.3
+Reporting disabled: using no op test run registrar
+TEST [Testing - goToTrendingPage] STARTED at [14:08:38 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - goToTrendingPage] PASSED at [14:08:45 2023-07-27]
+INFO: '**************** Test execution summary ****************'.
+RESULT #1: TEST [Testing - goToTrendingPage] PASS []
+Reflections took 100 ms to scan 10 urls, producing 122 keys and 364 values
+
+============= Basic configuration =============
+env=HOMEWORK
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+url=https://www.youtube.com/
+selenium_url=http://localhost:4444/wd/hub
+auto_screenshot=true
+explicit_timeout=100
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1527 ms to scan 221 urls, producing 12392 keys and 53429 values
+[TestNG] Running:
+  C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
+
+Set thread-count=1
+Set data-provider-thread-count=1
+CARINA_CORE_VERSION: 1.1.3
+Reporting disabled: using no op test run registrar
+TEST [Testing - goToTrendingPage] STARTED at [14:09:14 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - goToTrendingPage] PASSED at [14:09:21 2023-07-27]
+INFO: '**************** Test execution summary ****************'.
+RESULT #1: TEST [Testing - goToTrendingPage] PASS []
+Reflections took 135 ms to scan 10 urls, producing 122 keys and 364 values
+
+============= Basic configuration =============
+env=HOMEWORK
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+url=https://www.youtube.com/
+selenium_url=http://localhost:4444/wd/hub
+auto_screenshot=true
+explicit_timeout=100
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1512 ms to scan 221 urls, producing 12392 keys and 53429 values
+[TestNG] Running:
+  C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
+
+Set thread-count=1
+Set data-provider-thread-count=1
+CARINA_CORE_VERSION: 1.1.3
+Reporting disabled: using no op test run registrar
+TEST [Testing - goToHomePageFromVideoPage] STARTED at [14:13:18 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+Reflections took 135 ms to scan 10 urls, producing 122 keys and 364 values
+
+============= Basic configuration =============
+env=HOMEWORK
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+url=https://www.youtube.com/
+selenium_url=http://localhost:4444/wd/hub
+auto_screenshot=true
+explicit_timeout=100
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1545 ms to scan 221 urls, producing 12392 keys and 53429 values
+[TestNG] Running:
+  C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
+
+Set thread-count=1
+Set data-provider-thread-count=1
+CARINA_CORE_VERSION: 1.1.3
+Reporting disabled: using no op test run registrar
+TEST [Testing - goToHomePageFromVideoPage] STARTED at [14:14:30 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+Reflections took 170 ms to scan 10 urls, producing 122 keys and 364 values
+
+============= Basic configuration =============
+env=HOMEWORK
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+url=https://www.youtube.com/
+selenium_url=http://localhost:4444/wd/hub
+auto_screenshot=true
+explicit_timeout=100
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1657 ms to scan 221 urls, producing 12392 keys and 53429 values
+[TestNG] Running:
+  C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
+
+Set thread-count=1
+Set data-provider-thread-count=1
+CARINA_CORE_VERSION: 1.1.3
+Reporting disabled: using no op test run registrar
+TEST [Testing - goToHomePageFromVideoPage] STARTED at [14:16:39 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - goToHomePageFromVideoPage] PASSED at [14:16:50 2023-07-27]
+INFO: '**************** Test execution summary ****************'.
+RESULT #1: TEST [Testing - goToHomePageFromVideoPage] PASS []
+Reflections took 110 ms to scan 10 urls, producing 122 keys and 364 values
+
+============= Basic configuration =============
+env=HOMEWORK
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+url=https://www.youtube.com/
+selenium_url=http://localhost:4444/wd/hub
+auto_screenshot=true
+explicit_timeout=100
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1455 ms to scan 221 urls, producing 12392 keys and 53429 values
+[TestNG] Running:
+  C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
+
+Set thread-count=1
+Set data-provider-thread-count=1
+CARINA_CORE_VERSION: 1.1.3
+Reporting disabled: using no op test run registrar
+TEST [Testing - goToHomePageFromVideoPage] STARTED at [14:18:20 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - goToHomePageFromVideoPage] PASSED at [14:18:31 2023-07-27]
+Reporting disabled: using no op test run registrar
+TEST [Testing - goToTrendingPage] STARTED at [14:18:31 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - goToTrendingPage] PASSED at [14:18:38 2023-07-27]
+Reporting disabled: using no op test run registrar
+TEST [Testing - searchForVideo] STARTED at [14:18:38 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+Reflections took 98 ms to scan 10 urls, producing 122 keys and 364 values
+
+============= Basic configuration =============
+env=HOMEWORK
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+url=https://www.youtube.com/
+selenium_url=http://localhost:4444/wd/hub
+auto_screenshot=true
+explicit_timeout=100
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1523 ms to scan 221 urls, producing 12392 keys and 53429 values
+[TestNG] Running:
+  C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
+
+Set thread-count=1
+Set data-provider-thread-count=1
+CARINA_CORE_VERSION: 1.1.3
+Reporting disabled: using no op test run registrar
+TEST [Testing - goToHomePageFromVideoPage] STARTED at [14:20:49 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - goToHomePageFromVideoPage] PASSED at [14:21:00 2023-07-27]
+Reporting disabled: using no op test run registrar
+TEST [Testing - goToTrendingPage] STARTED at [14:21:00 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - goToTrendingPage] PASSED at [14:21:07 2023-07-27]
+Reporting disabled: using no op test run registrar
+TEST [Testing - searchForVideo] STARTED at [14:21:07 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+Reflections took 96 ms to scan 10 urls, producing 122 keys and 364 values
+
+============= Basic configuration =============
+env=HOMEWORK
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+url=https://www.youtube.com/
+selenium_url=http://localhost:4444/wd/hub
+auto_screenshot=true
+explicit_timeout=100
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1541 ms to scan 221 urls, producing 12392 keys and 53429 values
+[TestNG] Running:
+  C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
+
+Set thread-count=1
+Set data-provider-thread-count=1
+CARINA_CORE_VERSION: 1.1.3
+Reporting disabled: using no op test run registrar
+TEST [Testing - goToHomePageFromVideoPage] STARTED at [14:23:04 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - goToHomePageFromVideoPage] PASSED at [14:23:16 2023-07-27]
+Reporting disabled: using no op test run registrar
+TEST [Testing - goToTrendingPage] STARTED at [14:23:16 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - goToTrendingPage] PASSED at [14:23:23 2023-07-27]
+Reporting disabled: using no op test run registrar
+TEST [Testing - searchForVideo] STARTED at [14:23:23 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - searchForVideo] FAILED at [14:23:34 2023-07-27] - invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=115.0.5790.102)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [53dcb16c188cb2abd278907b6f20a656, findElement {using=css selector, value=yt-formatted-string[force-default-style class]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.102, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\sdn49\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59960}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59960/devtoo..., se:cdpVersion: 115.0.5790.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 53dcb16c188cb2abd278907b6f20a656
+
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+org.openqa.selenium.remote.RemoteWebDriver.findElement$original$TAQcsgLm(RemoteWebDriver.java:344)
+org.openqa.selenium.remote.RemoteWebDriver.findElement$original$TAQcsgLm$accessor$3SCToVr9(RemoteWebDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver$auxiliary$AWzlJD6G.call(Unknown Source)
+com.zebrunner.agent.core.webdriver.PublicMethodInvocationInterceptor.onPublicMethodInvocation(PublicMethodInvocationInterceptor.java:18)
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java)
+org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
+org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
+org.openqa.selenium.support.ui.ExpectedConditions$49.apply(ExpectedConditions.java:1396)
+org.openqa.selenium.support.ui.ExpectedConditions$49.apply(ExpectedConditions.java:1390)
+org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.waitUntil(ExtendedWebElement.java:273)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.isElementPresent(ExtendedWebElement.java:813)
+com.zebrunner.carina.webdriver.gui.AbstractPage.isPageOpened(AbstractPage.java:81)
+com.zebrunner.carina.webdriver.gui.AbstractPage.isPageOpened(AbstractPage.java:70)
+com.solvd.apitesting.carina.demo.main.WebTest.searchForVideo(WebTest.java:25)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:564)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+org.testng.TestRunner.privateRun(TestRunner.java:829)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+org.testng.SuiteRunner.run(SuiteRunner.java:330)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+org.testng.TestNG.runSuites(TestNG.java:1099)
+org.testng.TestNG.run(TestNG.java:1067)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Reporting disabled: using no op test run registrar
+TEST [Testing - signInWithEmail] STARTED at [14:23:34 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - signInWithEmail] PASSED at [14:23:46 2023-07-27]
+Reporting disabled: using no op test run registrar
+TEST [Testing - signInWithInvalidEmail] STARTED at [14:23:46 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - signInWithInvalidEmail] PASSED at [14:24:03 2023-07-27]
+INFO: '**************** Test execution summary ****************'.
+RESULT #1: TEST [Testing - goToHomePageFromVideoPage] PASS []
+RESULT #2: TEST [Testing - goToTrendingPage] PASS []
+RESULT #3: TEST [Testing - searchForVideo] FAIL []
+RESULT #4: TEST [Testing - signInWithEmail] PASS []
+RESULT #5: TEST [Testing - signInWithInvalidEmail] PASS []
+Reflections took 104 ms to scan 10 urls, producing 122 keys and 364 values
+
+============= Basic configuration =============
+env=HOMEWORK
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+url=https://www.youtube.com/
+selenium_url=http://localhost:4444/wd/hub
+auto_screenshot=true
+explicit_timeout=100
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1539 ms to scan 221 urls, producing 12392 keys and 53429 values
+[TestNG] Running:
+  C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
+
+Set thread-count=1
+Set data-provider-thread-count=1
+CARINA_CORE_VERSION: 1.1.3
+Reporting disabled: using no op test run registrar
+TEST [Testing - searchForVideo] STARTED at [14:25:33 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - searchForVideo] PASSED at [14:25:43 2023-07-27]
+INFO: '**************** Test execution summary ****************'.
+RESULT #1: TEST [Testing - searchForVideo] PASS []
+Reflections took 97 ms to scan 10 urls, producing 122 keys and 364 values
+
+============= Basic configuration =============
+env=HOMEWORK
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+url=https://www.youtube.com/
+selenium_url=http://localhost:4444
+auto_screenshot=true
+explicit_timeout=100
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1731 ms to scan 221 urls, producing 12392 keys and 53429 values
+[TestNG] Running:
+  C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
+
+Set thread-count=1
+Set data-provider-thread-count=1
+CARINA_CORE_VERSION: 1.1.3
+Reporting disabled: using no op test run registrar
+TEST [Testing - searchForVideo] STARTED at [14:33:12 2023-07-27]
+Starting driver session...
+TEST [Testing - searchForVideo] FAILED at [14:33:13 2023-07-27] - Could not start a new session. Response code 500. Message: Could not start a new session. Error while creating session with the driver service. Stopping driver service: chromedriver located at chromedriver, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: unknown 
+Host info: host: 'DESKTOP-D994MSR', ip: '192.168.86.167'
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: unknown
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --test-type, --start-maximized, --ignore-ssl-errors], extensions: []}}]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --test-type, --start-maximized, --ignore-ssl-errors], extensions: []}}
+
+org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+com.zebrunner.carina.webdriver.listener.EventFiringSeleniumCommandExecutor.execute(EventFiringSeleniumCommandExecutor.java:52)
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+org.openqa.selenium.remote.RemoteWebDriver.startSession$original$aFcvYY2C(RemoteWebDriver.java:227)
+org.openqa.selenium.remote.RemoteWebDriver.startSession$original$aFcvYY2C$accessor$eYJaLtmT(RemoteWebDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver$auxiliary$8HLAOJFR.run(Unknown Source)
+com.zebrunner.agent.core.webdriver.StartSessionInterceptor.onSessionStart(StartSessionInterceptor.java:42)
+org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:154)
+com.zebrunner.carina.webdriver.core.factory.impl.DesktopFactory.create(DesktopFactory.java:85)
+com.zebrunner.carina.webdriver.core.factory.DriverFactory.create(DriverFactory.java:87)
+com.zebrunner.carina.webdriver.IDriverPool.createDriver(IDriverPool.java:364)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:117)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:80)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:68)
+com.solvd.apitesting.carina.demo.main.WebTest.searchForVideo(WebTest.java:23)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:564)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+org.testng.TestRunner.privateRun(TestRunner.java:829)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+org.testng.SuiteRunner.run(SuiteRunner.java:330)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+org.testng.TestNG.runSuites(TestNG.java:1099)
+org.testng.TestNG.run(TestNG.java:1067)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+INFO: '**************** Test execution summary ****************'.
+RESULT #1: TEST [Testing - searchForVideo] FAIL []
+Reflections took 104 ms to scan 10 urls, producing 122 keys and 364 values
+
+============= Basic configuration =============
+env=HOMEWORK
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+url=https://www.youtube.com/
+selenium_url=http://localhost:4444
+auto_screenshot=true
+explicit_timeout=100
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1955 ms to scan 221 urls, producing 12392 keys and 53429 values
+[TestNG] Running:
+  C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
+
+Set thread-count=1
+Set data-provider-thread-count=1
+CARINA_CORE_VERSION: 1.1.3
+Reporting disabled: using no op test run registrar
+TEST [Testing - searchForVideo] STARTED at [14:34:41 2023-07-27]
+Starting driver session...
+TEST [Testing - searchForVideo] FAILED at [14:34:42 2023-07-27] - Could not start a new session. Response code 500. Message: Could not start a new session. Error while creating session with the driver service. Stopping driver service: chromedriver located at chromedriver, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: unknown 
+Host info: host: 'DESKTOP-D994MSR', ip: '192.168.86.167'
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: unknown
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --test-type, --start-maximized, --ignore-ssl-errors], extensions: []}}]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --test-type, --start-maximized, --ignore-ssl-errors], extensions: []}}
+
+org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+com.zebrunner.carina.webdriver.listener.EventFiringSeleniumCommandExecutor.execute(EventFiringSeleniumCommandExecutor.java:52)
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+org.openqa.selenium.remote.RemoteWebDriver.startSession$original$yTPXK76W(RemoteWebDriver.java:227)
+org.openqa.selenium.remote.RemoteWebDriver.startSession$original$yTPXK76W$accessor$zq23xx1c(RemoteWebDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver$auxiliary$aTOXX77z.run(Unknown Source)
+com.zebrunner.agent.core.webdriver.StartSessionInterceptor.onSessionStart(StartSessionInterceptor.java:42)
+org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:154)
+com.zebrunner.carina.webdriver.core.factory.impl.DesktopFactory.create(DesktopFactory.java:85)
+com.zebrunner.carina.webdriver.core.factory.DriverFactory.create(DriverFactory.java:87)
+com.zebrunner.carina.webdriver.IDriverPool.createDriver(IDriverPool.java:364)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:117)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:80)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:68)
+com.solvd.apitesting.carina.demo.main.WebTest.searchForVideo(WebTest.java:23)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:564)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+org.testng.TestRunner.privateRun(TestRunner.java:829)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+org.testng.SuiteRunner.run(SuiteRunner.java:330)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+org.testng.TestNG.runSuites(TestNG.java:1099)
+org.testng.TestNG.run(TestNG.java:1067)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+INFO: '**************** Test execution summary ****************'.
+RESULT #1: TEST [Testing - searchForVideo] FAIL []
+Reflections took 109 ms to scan 10 urls, producing 122 keys and 364 values
+
+============= Basic configuration =============
+env=HOMEWORK
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+url=https://www.youtube.com/
+selenium_url=http://localhost:4444
+auto_screenshot=true
+explicit_timeout=100
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1733 ms to scan 221 urls, producing 12392 keys and 53429 values
+[TestNG] Running:
+  C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
+
+Set thread-count=1
+Set data-provider-thread-count=1
+CARINA_CORE_VERSION: 1.1.3
+Reporting disabled: using no op test run registrar
+TEST [Testing - searchForVideo] STARTED at [14:49:26 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - searchForVideo] PASSED at [14:49:37 2023-07-27]
+INFO: '**************** Test execution summary ****************'.
+RESULT #1: TEST [Testing - searchForVideo] PASS []
+Reflections took 144 ms to scan 10 urls, producing 122 keys and 364 values
+
+============= Basic configuration =============
+env=HOMEWORK
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+url=https://www.youtube.com/
+selenium_url=http://localhost:4444
+auto_screenshot=true
+explicit_timeout=100
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1833 ms to scan 221 urls, producing 12392 keys and 53429 values
+[TestNG] Running:
+  C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
+
+Set thread-count=1
+Set data-provider-thread-count=1
+CARINA_CORE_VERSION: 1.1.3
+Reporting disabled: using no op test run registrar
+TEST [Testing - searchForVideo] STARTED at [14:54:21 2023-07-27]
+Starting driver session...
+TEST [Testing - searchForVideo] FAILED at [14:54:23 2023-07-27] - Could not start a new session. Response code 500. Message: Could not start a new session. Error while creating session with the driver service. Stopping driver service: chromedriver located at chromedriver, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: unknown 
+Host info: host: 'DESKTOP-D994MSR', ip: '192.168.86.167'
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: unknown
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --test-type, --start-maximized, --ignore-ssl-errors], extensions: []}}]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --test-type, --start-maximized, --ignore-ssl-errors], extensions: []}}
+
+org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+com.zebrunner.carina.webdriver.listener.EventFiringSeleniumCommandExecutor.execute(EventFiringSeleniumCommandExecutor.java:52)
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+org.openqa.selenium.remote.RemoteWebDriver.startSession$original$1lVyYc4e(RemoteWebDriver.java:227)
+org.openqa.selenium.remote.RemoteWebDriver.startSession$original$1lVyYc4e$accessor$tUVObgkW(RemoteWebDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver$auxiliary$SLevADNb.run(Unknown Source)
+com.zebrunner.agent.core.webdriver.StartSessionInterceptor.onSessionStart(StartSessionInterceptor.java:42)
+org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:154)
+com.zebrunner.carina.webdriver.core.factory.impl.DesktopFactory.create(DesktopFactory.java:85)
+com.zebrunner.carina.webdriver.core.factory.DriverFactory.create(DriverFactory.java:87)
+com.zebrunner.carina.webdriver.IDriverPool.createDriver(IDriverPool.java:364)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:117)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:80)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:68)
+com.solvd.apitesting.carina.demo.main.WebTest.searchForVideo(WebTest.java:24)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:564)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+org.testng.TestRunner.privateRun(TestRunner.java:829)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+org.testng.SuiteRunner.run(SuiteRunner.java:330)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+org.testng.TestNG.runSuites(TestNG.java:1099)
+org.testng.TestNG.run(TestNG.java:1067)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+INFO: '**************** Test execution summary ****************'.
+RESULT #1: TEST [Testing - searchForVideo] FAIL []

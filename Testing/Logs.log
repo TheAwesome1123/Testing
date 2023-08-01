@@ -13845,7 +13845,7 @@ PASS: element 'otherRadioButton' is clicked.
 TEST [Testing - testUIElements] PASSED at [14:25:18 2023-07-25]
 INFO: '**************** Test execution summary ****************'.
 RESULT #1: TEST [Testing - testUIElements] PASS [screenshots=file://C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\.\reports\1690320259540/d8fd0a28-badc-4ce4-b1f3-f5d1c1d2da73/report.html | ]
-Reflections took 110 ms to scan 10 urls, producing 122 keys and 364 values
+Reflections took 176 ms to scan 10 urls, producing 122 keys and 364 values
 
 ============= Basic configuration =============
 env=HOMEWORK
@@ -13911,6 +13911,28 @@ com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:117)
 com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:80)
 com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:68)
 com.solvd.apitesting.carina.demo.main.MobileTest.testInvalidUserNameAndPassword(MobileTest.java:13)
+TEST [Testing - searchForVideo] STARTED at [13:23:10 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - searchForVideo] PASSED at [13:23:24 2023-07-27]
+INFO: '**************** Test execution summary ****************'.
+RESULT #1: TEST [Testing - searchForVideo] PASS []
+Reflections took 102 ms to scan 10 urls, producing 122 keys and 364 values
+
+============= Basic configuration =============
+env=HOMEWORK
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+url=https://www.youtube.com/
+selenium_url=http://localhost:4723
+auto_screenshot=true
+explicit_timeout=100
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+app=https://qaprosoft.s3-us-west-2.amazonaws.com/carinademoexample.apk
+automationName=uiautomator2
+platformName=ANDROID
 java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -13939,8 +13961,8 @@ org.testng.TestNG.run(TestNG.java:1067)
 com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
 INFO: '**************** Test execution summary ****************'.
-RESULT #1: TEST [Testing - testInvalidUserNameAndPassword] FAIL []
-Reflections took 94 ms to scan 10 urls, producing 122 keys and 364 values
+RESULT #1: TEST [Testing - searchForVideo] FAIL []
+Reflections took 129 ms to scan 10 urls, producing 122 keys and 364 values
 
 ============= Basic configuration =============
 env=HOMEWORK
@@ -14050,14 +14072,22 @@ explicit_timeout=100
 localization_encoding=UTF-8
 language=en_US
 -------------- Driver capabilities ------------
+
 appActivity=com.swaglabsmobileapp.SplashActivity
 app=C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\saucelabs.apk
+=======
+app=https://qaprosoft.s3-us-west-2.amazonaws.com/carinademoexample.apk
+
 automationName=uiautomator2
 platformName=ANDROID
 ===============================================
 
 Reporting disabled: using no op test run registrar
+
 Reflections took 1486 ms to scan 221 urls, producing 12382 keys and 53405 values
+=======
+Reflections took 1598 ms to scan 221 urls, producing 12391 keys and 53428 values
+
 [TestNG] Running:
   C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
 
@@ -14065,6 +14095,7 @@ Set thread-count=1
 Set data-provider-thread-count=1
 CARINA_CORE_VERSION: 1.1.3
 Reporting disabled: using no op test run registrar
+
 TEST [Testing - testInvalidUserNameAndPassword] STARTED at [13:41:42 2023-07-26]
 Starting driver session...
 Reflections took 931 ms to scan 208 urls, producing 163 keys and 10732 values
@@ -14090,6 +14121,19 @@ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
 io.appium.java_client.AppiumDriver.startSession$original$K89f2Mjg(AppiumDriver.java:274)
 io.appium.java_client.AppiumDriver.startSession$original$K89f2Mjg$accessor$iUnormta(AppiumDriver.java)
 io.appium.java_client.AppiumDriver$auxiliary$QmRja6uA.run(Unknown Source)
+=======
+TEST [Testing - searchForVideo] STARTED at [13:27:23 2023-07-27]
+Starting driver session...
+Reflections took 1097 ms to scan 208 urls, producing 163 keys and 10732 values
+Failed to attach artifact reference 'app' to test run because it has not been started yet.
+TEST [Testing - searchForVideo] FAILED at [13:27:29 2023-07-27] - Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DESKTOP-D994MSR', ip: '192.168.86.167'
+
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:549)
+io.appium.java_client.AppiumDriver.startSession$original$tvLOGJxX(AppiumDriver.java:274)
+io.appium.java_client.AppiumDriver.startSession$original$tvLOGJxX$accessor$Xcvr1VW0(AppiumDriver.java)
+io.appium.java_client.AppiumDriver$auxiliary$z0txAm3x.run(Unknown Source)
+
 com.zebrunner.agent.core.webdriver.StartSessionInterceptor.onSessionStart(StartSessionInterceptor.java:42)
 io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java)
 org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:154)
@@ -14102,7 +14146,11 @@ com.zebrunner.carina.webdriver.IDriverPool.createDriver(IDriverPool.java:364)
 com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:117)
 com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:80)
 com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:68)
+
 com.solvd.apitesting.carina.demo.main.MobileTest.testInvalidUserNameAndPassword(MobileTest.java:13)
+=======
+com.solvd.apitesting.carina.demo.main.WebTest.searchForVideo(WebTest.java:27)
+
 java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -14131,8 +14179,13 @@ org.testng.TestNG.run(TestNG.java:1067)
 com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
 INFO: '**************** Test execution summary ****************'.
+
 RESULT #1: TEST [Testing - testInvalidUserNameAndPassword] FAIL []
 Reflections took 104 ms to scan 10 urls, producing 122 keys and 364 values
+=======
+RESULT #1: TEST [Testing - searchForVideo] FAIL []
+Reflections took 98 ms to scan 10 urls, producing 122 keys and 364 values
+
 
 ============= Basic configuration =============
 env=HOMEWORK
@@ -14140,20 +14193,32 @@ env=HOMEWORK
 crypto_key_value=*****
 =========== WebDriver configuration ===========
 url=https://www.youtube.com/
+
 selenium_url=http://localhost:4723
+=======
+selenium_url=http://localhost:4444/wd/hub
+
 auto_screenshot=true
 explicit_timeout=100
 localization_encoding=UTF-8
 language=en_US
 -------------- Driver capabilities ------------
+
 app=C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\saucelabs.apk
 appWaitActivity=com.swaglabsmobileapp.MainActivity
+=======
+app=https://qaprosoft.s3-us-west-2.amazonaws.com/carinademoexample.apk
+
 automationName=uiautomator2
 platformName=ANDROID
 ===============================================
 
 Reporting disabled: using no op test run registrar
+
 Reflections took 1438 ms to scan 221 urls, producing 12382 keys and 53405 values
+=======
+Reflections took 1499 ms to scan 221 urls, producing 12391 keys and 53428 values
+
 [TestNG] Running:
   C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
 
@@ -14161,6 +14226,7 @@ Set thread-count=1
 Set data-provider-thread-count=1
 CARINA_CORE_VERSION: 1.1.3
 Reporting disabled: using no op test run registrar
+
 TEST [Testing - testInvalidUserNameAndPassword] STARTED at [13:45:21 2023-07-26]
 Starting driver session...
 Reflections took 960 ms to scan 208 urls, producing 163 keys and 10732 values
@@ -14170,6 +14236,49 @@ TEST [Testing - testInvalidUserNameAndPassword] FAILED at [13:45:33 2023-07-26] 
 
 com.zebrunner.carina.utils.factory.ICustomTypePageFactory.initPage(ICustomTypePageFactory.java:145)
 com.solvd.apitesting.carina.demo.main.MobileTest.testInvalidUserNameAndPassword(MobileTest.java:13)
+=======
+TEST [Testing - searchForVideo] STARTED at [13:28:05 2023-07-27]
+Starting driver session...
+Reflections took 1232 ms to scan 208 urls, producing 163 keys and 10732 values
+Failed to attach artifact reference 'app' to test run because it has not been started yet.
+TEST [Testing - searchForVideo] FAILED at [13:33:08 2023-07-27] - Could not start a new session. Response code 500. Message: Could not start a new session. New session request timed out 
+Host info: host: 'DESKTOP-D994MSR', ip: '192.168.86.167'
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: unknown
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:locale=US, appium:language=en, platformName=ANDROID, appium:automationName=uiautomator2, appium:app=https://qaprosoft.s3-us-west-2.amazonaws.com/carinademoexample.apk}], desiredCapabilities=Capabilities {appium:app: https://qaprosoft.s3-us-wes..., appium:automationName: uiautomator2, appium:language: en, appium:locale: US, platformName: ANDROID}}]
+Capabilities {appium:app: https://qaprosoft.s3-us-wes..., appium:automationName: uiautomator2, appium:language: en, appium:locale: US, platformName: ANDROID}
+
+org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:564)
+io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+io.appium.java_client.AppiumDriver.startSession$original$BzkLKPVJ(AppiumDriver.java:274)
+io.appium.java_client.AppiumDriver.startSession$original$BzkLKPVJ$accessor$LENGhzUE(AppiumDriver.java)
+io.appium.java_client.AppiumDriver$auxiliary$cWtGZBEH.run(Unknown Source)
+com.zebrunner.agent.core.webdriver.StartSessionInterceptor.onSessionStart(StartSessionInterceptor.java:42)
+io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:154)
+io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:97)
+io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:227)
+com.zebrunner.carina.webdriver.core.factory.impl.MobileFactory.create(MobileFactory.java:125)
+com.zebrunner.carina.webdriver.core.factory.DriverFactory.create(DriverFactory.java:87)
+com.zebrunner.carina.webdriver.IDriverPool.createDriver(IDriverPool.java:364)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:117)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:80)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:68)
+com.solvd.apitesting.carina.demo.main.WebTest.searchForVideo(WebTest.java:27)
+
 java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -14198,8 +14307,13 @@ org.testng.TestNG.run(TestNG.java:1067)
 com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
 INFO: '**************** Test execution summary ****************'.
+
 RESULT #1: TEST [Testing - testInvalidUserNameAndPassword] FAIL [screenshots=file://C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\.\reports\1690404318206/cd1bd376-430c-41ce-9902-5144baec798d/report.html | ]
 Reflections took 101 ms to scan 10 urls, producing 122 keys and 364 values
+=======
+RESULT #1: TEST [Testing - searchForVideo] FAIL []
+Reflections took 99 ms to scan 10 urls, producing 122 keys and 364 values
+
 
 ============= Basic configuration =============
 env=HOMEWORK
@@ -14207,12 +14321,17 @@ env=HOMEWORK
 crypto_key_value=*****
 =========== WebDriver configuration ===========
 url=https://www.youtube.com/
+
 selenium_url=http://localhost:4723
+=======
+selenium_url=http://localhost:4444/wd/hub
+
 auto_screenshot=true
 explicit_timeout=100
 localization_encoding=UTF-8
 language=en_US
 -------------- Driver capabilities ------------
+
 app=C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\saucelabs.apk
 deviceType=ANDROID_PHONE
 appWaitActivity=com.swaglabsmobileapp.MainActivity
@@ -14222,6 +14341,12 @@ platformName=ANDROID
 
 Reporting disabled: using no op test run registrar
 Reflections took 1513 ms to scan 221 urls, producing 12382 keys and 53405 values
+=======
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1445 ms to scan 221 urls, producing 12391 keys and 53428 values
+
 [TestNG] Running:
   C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
 
@@ -14229,6 +14354,7 @@ Set thread-count=1
 Set data-provider-thread-count=1
 CARINA_CORE_VERSION: 1.1.3
 Reporting disabled: using no op test run registrar
+
 TEST [Testing - testInvalidUserNameAndPassword] STARTED at [13:46:19 2023-07-26]
 Starting driver session...
 Reflections took 861 ms to scan 208 urls, producing 163 keys and 10732 values
@@ -14238,6 +14364,18 @@ TEST [Testing - testInvalidUserNameAndPassword] FAILED at [13:46:30 2023-07-26] 
 
 com.zebrunner.carina.utils.factory.ICustomTypePageFactory.initPage(ICustomTypePageFactory.java:145)
 com.solvd.apitesting.carina.demo.main.MobileTest.testInvalidUserNameAndPassword(MobileTest.java:13)
+=======
+TEST [Testing - searchForVideo] STARTED at [13:46:59 2023-07-27]
+TEST [Testing - searchForVideo] FAILED at [13:46:59 2023-07-27] - Cannot detect driver type. Capabilities 'browserName', 'platformName', 'udid' are empty.
+
+com.zebrunner.carina.webdriver.config.WebDriverConfiguration.getDriverType(WebDriverConfiguration.java:436)
+com.zebrunner.carina.webdriver.core.factory.DriverFactory.create(DriverFactory.java:68)
+com.zebrunner.carina.webdriver.IDriverPool.createDriver(IDriverPool.java:364)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:117)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:80)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:68)
+com.solvd.apitesting.carina.demo.main.WebTest.searchForVideo(WebTest.java:27)
+
 java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -14266,8 +14404,13 @@ org.testng.TestNG.run(TestNG.java:1067)
 com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
 INFO: '**************** Test execution summary ****************'.
+
 RESULT #1: TEST [Testing - testInvalidUserNameAndPassword] FAIL [screenshots=file://C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\.\reports\1690404376021/bc823138-7239-43a3-8aa5-4cc7f97cb850/report.html | ]
 Reflections took 121 ms to scan 10 urls, producing 122 keys and 364 values
+=======
+RESULT #1: TEST [Testing - searchForVideo] FAIL []
+Reflections took 97 ms to scan 10 urls, producing 122 keys and 364 values
+
 
 ============= Basic configuration =============
 env=HOMEWORK
@@ -14275,12 +14418,17 @@ env=HOMEWORK
 crypto_key_value=*****
 =========== WebDriver configuration ===========
 url=https://www.youtube.com/
+
 selenium_url=http://localhost:4723
+=======
+selenium_url=http://localhost:4444/wd/hub
+
 auto_screenshot=true
 explicit_timeout=100
 localization_encoding=UTF-8
 language=en_US
 -------------- Driver capabilities ------------
+
 app=C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\saucelabs.apk
 deviceType=ANDROID_PHONE
 appWaitActivity=com.swaglabsmobileapp.MainActivity
@@ -14290,6 +14438,13 @@ platformName=ANDROID
 
 Reporting disabled: using no op test run registrar
 Reflections took 1711 ms to scan 221 urls, producing 12382 keys and 53405 values
+=======
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1248 ms to scan 221 urls, producing 12391 keys and 53428 values
+
 [TestNG] Running:
   C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
 
@@ -14297,6 +14452,7 @@ Set thread-count=1
 Set data-provider-thread-count=1
 CARINA_CORE_VERSION: 1.1.3
 Reporting disabled: using no op test run registrar
+
 TEST [Testing - testInvalidUserNameAndPassword] STARTED at [13:48:03 2023-07-26]
 Starting driver session...
 Reflections took 945 ms to scan 208 urls, producing 163 keys and 10732 values
@@ -14306,6 +14462,44 @@ TEST [Testing - testInvalidUserNameAndPassword] FAILED at [13:48:15 2023-07-26] 
 
 com.zebrunner.carina.utils.factory.ICustomTypePageFactory.initPage(ICustomTypePageFactory.java:145)
 com.solvd.apitesting.carina.demo.main.MobileTest.testInvalidUserNameAndPassword(MobileTest.java:13)
+=======
+TEST [Testing - searchForVideo] STARTED at [13:47:36 2023-07-27]
+Starting driver session...
+TEST [Testing - searchForVideo] FAILED at [13:47:37 2023-07-27] - Could not start a new session. Response code 500. Message: Could not start a new session. Error while creating session with the driver service. Stopping driver service: chromedriver located at chromedriver, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: unknown 
+Host info: host: 'DESKTOP-D994MSR', ip: '192.168.86.167'
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: unknown
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --test-type, --start-maximized, --ignore-ssl-errors], extensions: []}}]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --test-type, --start-maximized, --ignore-ssl-errors], extensions: []}}
+
+org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+com.zebrunner.carina.webdriver.listener.EventFiringSeleniumCommandExecutor.execute(EventFiringSeleniumCommandExecutor.java:52)
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+org.openqa.selenium.remote.RemoteWebDriver.startSession$original$PbdcGZlj(RemoteWebDriver.java:227)
+org.openqa.selenium.remote.RemoteWebDriver.startSession$original$PbdcGZlj$accessor$wFB6JUE9(RemoteWebDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver$auxiliary$f7hJ0yat.run(Unknown Source)
+com.zebrunner.agent.core.webdriver.StartSessionInterceptor.onSessionStart(StartSessionInterceptor.java:42)
+org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:154)
+com.zebrunner.carina.webdriver.core.factory.impl.DesktopFactory.create(DesktopFactory.java:85)
+com.zebrunner.carina.webdriver.core.factory.DriverFactory.create(DriverFactory.java:87)
+com.zebrunner.carina.webdriver.IDriverPool.createDriver(IDriverPool.java:364)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:117)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:80)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:68)
+com.solvd.apitesting.carina.demo.main.WebTest.searchForVideo(WebTest.java:27)
+
 java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -14334,8 +14528,13 @@ org.testng.TestNG.run(TestNG.java:1067)
 com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
 INFO: '**************** Test execution summary ****************'.
+
 RESULT #1: TEST [Testing - testInvalidUserNameAndPassword] FAIL [screenshots=file://C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\.\reports\1690404479913/826a0784-6f08-460d-b8dc-4d7f2a67de45/report.html | ]
 Reflections took 98 ms to scan 10 urls, producing 122 keys and 364 values
+=======
+RESULT #1: TEST [Testing - searchForVideo] FAIL []
+Reflections took 108 ms to scan 10 urls, producing 122 keys and 364 values
+
 
 ============= Basic configuration =============
 env=HOMEWORK
@@ -14343,12 +14542,17 @@ env=HOMEWORK
 crypto_key_value=*****
 =========== WebDriver configuration ===========
 url=https://www.youtube.com/
+
 selenium_url=http://localhost:4723
+=======
+selenium_url=http://localhost:4444/wd/hub
+
 auto_screenshot=true
 explicit_timeout=100
 localization_encoding=UTF-8
 language=en_US
 -------------- Driver capabilities ------------
+
 app=C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\saucelabs.apk
 deviceType=ANDROID_PHONE
 appWaitActivity=com.swaglabsmobileapp.MainActivity
@@ -14358,6 +14562,13 @@ platformName=ANDROID
 
 Reporting disabled: using no op test run registrar
 Reflections took 1505 ms to scan 221 urls, producing 12382 keys and 53405 values
+=======
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1625 ms to scan 221 urls, producing 12391 keys and 53428 values
+
 [TestNG] Running:
   C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
 
@@ -14365,6 +14576,7 @@ Set thread-count=1
 Set data-provider-thread-count=1
 CARINA_CORE_VERSION: 1.1.3
 Reporting disabled: using no op test run registrar
+
 TEST [Testing - testInvalidUserNameAndPassword] STARTED at [13:49:20 2023-07-26]
 Starting driver session...
 Reflections took 988 ms to scan 208 urls, producing 163 keys and 10732 values
@@ -14377,6 +14589,13 @@ PASS: keys 'test' are sent to element 'passwordInput'.
 TEST [Testing - testInvalidUserNameAndPassword] PASSED at [13:49:42 2023-07-26]
 INFO: '**************** Test execution summary ****************'.
 RESULT #1: TEST [Testing - testInvalidUserNameAndPassword] PASS [screenshots=file://C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\.\reports\1690404557046/6e645f1b-9e82-4c04-a6f2-502e1dd8e404/report.html | ]
+=======
+TEST [Testing - searchForVideo] STARTED at [13:49:03 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - searchForVideo] PASSED at [13:49:13 2023-07-27]
+INFO: '**************** Test execution summary ****************'.
+RESULT #1: TEST [Testing - searchForVideo] PASS []
+
 Reflections took 97 ms to scan 10 urls, producing 122 keys and 364 values
 
 ============= Basic configuration =============
@@ -14385,12 +14604,17 @@ env=HOMEWORK
 crypto_key_value=*****
 =========== WebDriver configuration ===========
 url=https://www.youtube.com/
+
 selenium_url=http://localhost:4723
+=======
+selenium_url=http://localhost:4444/wd/hub
+
 auto_screenshot=true
 explicit_timeout=100
 localization_encoding=UTF-8
 language=en_US
 -------------- Driver capabilities ------------
+
 app=C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\saucelabs.apk
 deviceType=ANDROID_PHONE
 appWaitActivity=com.swaglabsmobileapp.MainActivity
@@ -14400,6 +14624,13 @@ platformName=ANDROID
 
 Reporting disabled: using no op test run registrar
 Reflections took 1593 ms to scan 221 urls, producing 12382 keys and 53405 values
+=======
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1549 ms to scan 221 urls, producing 12391 keys and 53428 values
+
 [TestNG] Running:
   C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
 
@@ -14407,6 +14638,7 @@ Set thread-count=1
 Set data-provider-thread-count=1
 CARINA_CORE_VERSION: 1.1.3
 Reporting disabled: using no op test run registrar
+
 TEST [Testing - testInvalidUserNameAndPassword] STARTED at [13:49:58 2023-07-26]
 Starting driver session...
 Reflections took 946 ms to scan 208 urls, producing 163 keys and 10732 values
@@ -14420,6 +14652,14 @@ TEST [Testing - testInvalidUserNameAndPassword] PASSED at [13:50:18 2023-07-26]
 INFO: '**************** Test execution summary ****************'.
 RESULT #1: TEST [Testing - testInvalidUserNameAndPassword] PASS [screenshots=file://C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\.\reports\1690404594852/0d604a25-b5ed-497d-b5c1-043c0ec83cf9/report.html | ]
 Reflections took 105 ms to scan 10 urls, producing 122 keys and 364 values
+=======
+TEST [Testing - searchForVideo] STARTED at [13:50:07 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - searchForVideo] PASSED at [13:50:16 2023-07-27]
+INFO: '**************** Test execution summary ****************'.
+RESULT #1: TEST [Testing - searchForVideo] PASS []
+Reflections took 111 ms to scan 10 urls, producing 122 keys and 364 values
+
 
 ============= Basic configuration =============
 env=HOMEWORK
@@ -14427,12 +14667,17 @@ env=HOMEWORK
 crypto_key_value=*****
 =========== WebDriver configuration ===========
 url=https://www.youtube.com/
+
 selenium_url=http://localhost:4723
+=======
+selenium_url=http://localhost:4444/wd/hub
+
 auto_screenshot=true
 explicit_timeout=100
 localization_encoding=UTF-8
 language=en_US
 -------------- Driver capabilities ------------
+
 app=C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\saucelabs.apk
 deviceType=ANDROID_PHONE
 appWaitActivity=com.swaglabsmobileapp.MainActivity
@@ -14442,6 +14687,13 @@ platformName=ANDROID
 
 Reporting disabled: using no op test run registrar
 Reflections took 1571 ms to scan 221 urls, producing 12382 keys and 53405 values
+=======
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1488 ms to scan 221 urls, producing 12391 keys and 53428 values
+
 [TestNG] Running:
   C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
 
@@ -14449,6 +14701,7 @@ Set thread-count=1
 Set data-provider-thread-count=1
 CARINA_CORE_VERSION: 1.1.3
 Reporting disabled: using no op test run registrar
+
 TEST [Testing - testInvalidUserNameAndPassword] STARTED at [13:52:14 2023-07-26]
 Starting driver session...
 Reflections took 937 ms to scan 208 urls, producing 163 keys and 10732 values
@@ -14463,6 +14716,14 @@ TEST [Testing - testInvalidUserNameAndPassword] PASSED at [13:52:35 2023-07-26]
 INFO: '**************** Test execution summary ****************'.
 RESULT #1: TEST [Testing - testInvalidUserNameAndPassword] PASS [screenshots=file://C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\.\reports\1690404730424/f64a856a-b820-428f-8f39-226b77274147/report.html | ]
 Reflections took 109 ms to scan 10 urls, producing 122 keys and 364 values
+=======
+TEST [Testing - goToTrendingPage] STARTED at [14:02:54 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - goToTrendingPage] PASSED at [14:03:01 2023-07-27]
+INFO: '**************** Test execution summary ****************'.
+RESULT #1: TEST [Testing - goToTrendingPage] PASS []
+Reflections took 135 ms to scan 10 urls, producing 122 keys and 364 values
+
 
 ============= Basic configuration =============
 env=HOMEWORK
@@ -14470,12 +14731,17 @@ env=HOMEWORK
 crypto_key_value=*****
 =========== WebDriver configuration ===========
 url=https://www.youtube.com/
+
 selenium_url=http://localhost:4723
+=======
+selenium_url=http://localhost:4444/wd/hub
+
 auto_screenshot=true
 explicit_timeout=100
 localization_encoding=UTF-8
 language=en_US
 -------------- Driver capabilities ------------
+
 app=C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\saucelabs.apk
 deviceType=ANDROID_PHONE
 appWaitActivity=com.swaglabsmobileapp.MainActivity
@@ -14485,6 +14751,13 @@ platformName=ANDROID
 
 Reporting disabled: using no op test run registrar
 Reflections took 1694 ms to scan 221 urls, producing 12382 keys and 53405 values
+=======
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 2619 ms to scan 221 urls, producing 12391 keys and 53428 values
+
 [TestNG] Running:
   C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
 
@@ -14492,6 +14765,7 @@ Set thread-count=1
 Set data-provider-thread-count=1
 CARINA_CORE_VERSION: 1.1.3
 Reporting disabled: using no op test run registrar
+
 TEST [Testing - testInvalidUserNameAndPassword] STARTED at [13:52:50 2023-07-26]
 Starting driver session...
 Reflections took 1112 ms to scan 208 urls, producing 163 keys and 10732 values
@@ -14506,6 +14780,14 @@ TEST [Testing - testInvalidUserNameAndPassword] PASSED at [13:53:11 2023-07-26]
 INFO: '**************** Test execution summary ****************'.
 RESULT #1: TEST [Testing - testInvalidUserNameAndPassword] PASS [screenshots=file://C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\.\reports\1690404766262/d5321ebb-7163-4437-b95c-856f183ed876/report.html | ]
 Reflections took 105 ms to scan 10 urls, producing 122 keys and 364 values
+=======
+TEST [Testing - goToTrendingPage] STARTED at [14:03:29 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - goToTrendingPage] PASSED at [14:03:38 2023-07-27]
+INFO: '**************** Test execution summary ****************'.
+RESULT #1: TEST [Testing - goToTrendingPage] PASS []
+Reflections took 133 ms to scan 10 urls, producing 122 keys and 364 values
+
 
 ============= Basic configuration =============
 env=HOMEWORK
@@ -14513,12 +14795,17 @@ env=HOMEWORK
 crypto_key_value=*****
 =========== WebDriver configuration ===========
 url=https://www.youtube.com/
+
 selenium_url=http://localhost:4723
+=======
+selenium_url=http://localhost:4444/wd/hub
+
 auto_screenshot=true
 explicit_timeout=100
 localization_encoding=UTF-8
 language=en_US
 -------------- Driver capabilities ------------
+
 app=C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\saucelabs.apk
 deviceType=ANDROID_PHONE
 appWaitActivity=com.swaglabsmobileapp.MainActivity
@@ -14528,6 +14815,13 @@ platformName=ANDROID
 
 Reporting disabled: using no op test run registrar
 Reflections took 1638 ms to scan 221 urls, producing 12382 keys and 53405 values
+=======
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1599 ms to scan 221 urls, producing 12392 keys and 53429 values
+
 [TestNG] Running:
   C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
 
@@ -14535,6 +14829,7 @@ Set thread-count=1
 Set data-provider-thread-count=1
 CARINA_CORE_VERSION: 1.1.3
 Reporting disabled: using no op test run registrar
+
 TEST [Testing - testInvalidUserNameAndPassword] STARTED at [13:58:49 2023-07-26]
 Starting driver session...
 Reflections took 926 ms to scan 208 urls, producing 163 keys and 10732 values
@@ -14549,6 +14844,14 @@ TEST [Testing - testInvalidUserNameAndPassword] PASSED at [13:59:13 2023-07-26]
 INFO: '**************** Test execution summary ****************'.
 RESULT #1: TEST [Testing - testInvalidUserNameAndPassword] PASS [screenshots=file://C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\.\reports\1690405125967/1ba92826-d7e3-497c-a853-cef5bf9f6385/report.html | ]
 Reflections took 97 ms to scan 10 urls, producing 122 keys and 364 values
+=======
+TEST [Testing - goToTrendingPage] STARTED at [14:08:38 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - goToTrendingPage] PASSED at [14:08:45 2023-07-27]
+INFO: '**************** Test execution summary ****************'.
+RESULT #1: TEST [Testing - goToTrendingPage] PASS []
+Reflections took 100 ms to scan 10 urls, producing 122 keys and 364 values
+
 
 ============= Basic configuration =============
 env=HOMEWORK
@@ -14556,12 +14859,17 @@ env=HOMEWORK
 crypto_key_value=*****
 =========== WebDriver configuration ===========
 url=https://www.youtube.com/
+
 selenium_url=http://localhost:4723
+=======
+selenium_url=http://localhost:4444/wd/hub
+
 auto_screenshot=true
 explicit_timeout=100
 localization_encoding=UTF-8
 language=en_US
 -------------- Driver capabilities ------------
+
 app=C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\saucelabs.apk
 deviceType=ANDROID_PHONE
 appWaitActivity=com.swaglabsmobileapp.MainActivity
@@ -14571,6 +14879,13 @@ platformName=ANDROID
 
 Reporting disabled: using no op test run registrar
 Reflections took 1384 ms to scan 221 urls, producing 12383 keys and 53407 values
+=======
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1527 ms to scan 221 urls, producing 12392 keys and 53429 values
+
 [TestNG] Running:
   C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
 
@@ -14578,6 +14893,7 @@ Set thread-count=1
 Set data-provider-thread-count=1
 CARINA_CORE_VERSION: 1.1.3
 Reporting disabled: using no op test run registrar
+
 TEST [Testing - testInvalidUserNameAndPassword] STARTED at [14:11:11 2023-07-26]
 Starting driver session...
 Reflections took 1115 ms to scan 208 urls, producing 163 keys and 10732 values
@@ -14592,6 +14908,14 @@ TEST [Testing - testInvalidUserNameAndPassword] PASSED at [14:11:33 2023-07-26]
 INFO: '**************** Test execution summary ****************'.
 RESULT #1: TEST [Testing - testInvalidUserNameAndPassword] PASS [screenshots=file://C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\.\reports\1690405867291/25298ef7-43b9-426b-8877-9a84253c432f/report.html | ]
 Reflections took 106 ms to scan 10 urls, producing 122 keys and 364 values
+=======
+TEST [Testing - goToTrendingPage] STARTED at [14:09:14 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - goToTrendingPage] PASSED at [14:09:21 2023-07-27]
+INFO: '**************** Test execution summary ****************'.
+RESULT #1: TEST [Testing - goToTrendingPage] PASS []
+Reflections took 135 ms to scan 10 urls, producing 122 keys and 364 values
+
 
 ============= Basic configuration =============
 env=HOMEWORK
@@ -14599,12 +14923,17 @@ env=HOMEWORK
 crypto_key_value=*****
 =========== WebDriver configuration ===========
 url=https://www.youtube.com/
+
 selenium_url=http://localhost:4723
+=======
+selenium_url=http://localhost:4444/wd/hub
+
 auto_screenshot=true
 explicit_timeout=100
 localization_encoding=UTF-8
 language=en_US
 -------------- Driver capabilities ------------
+
 app=C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\saucelabs.apk
 deviceType=ANDROID_PHONE
 appWaitActivity=com.swaglabsmobileapp.MainActivity
@@ -14614,6 +14943,13 @@ platformName=ANDROID
 
 Reporting disabled: using no op test run registrar
 Reflections took 1606 ms to scan 221 urls, producing 12383 keys and 53407 values
+=======
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1512 ms to scan 221 urls, producing 12392 keys and 53429 values
+
 [TestNG] Running:
   C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
 
@@ -14621,6 +14957,7 @@ Set thread-count=1
 Set data-provider-thread-count=1
 CARINA_CORE_VERSION: 1.1.3
 Reporting disabled: using no op test run registrar
+
 TEST [Testing - testValidUserNameAndPassword] STARTED at [14:11:50 2023-07-26]
 Starting driver session...
 Reflections took 1022 ms to scan 208 urls, producing 163 keys and 10732 values
@@ -14633,6 +14970,11 @@ PASS: keys 'secret_sauce' are sent to element 'passwordInput'.
 PASS: element 'loginButton' is clicked.
 Trying to quit driver 'default' on shutdown hook action!
 Reflections took 106 ms to scan 10 urls, producing 122 keys and 364 values
+=======
+TEST [Testing - goToHomePageFromVideoPage] STARTED at [14:13:18 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+Reflections took 135 ms to scan 10 urls, producing 122 keys and 364 values
+
 
 ============= Basic configuration =============
 env=HOMEWORK
@@ -14640,12 +14982,17 @@ env=HOMEWORK
 crypto_key_value=*****
 =========== WebDriver configuration ===========
 url=https://www.youtube.com/
+
 selenium_url=http://localhost:4723
+=======
+selenium_url=http://localhost:4444/wd/hub
+
 auto_screenshot=true
 explicit_timeout=100
 localization_encoding=UTF-8
 language=en_US
 -------------- Driver capabilities ------------
+
 app=C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\saucelabs.apk
 deviceType=ANDROID_PHONE
 appWaitActivity=com.swaglabsmobileapp.MainActivity
@@ -14655,6 +15002,13 @@ platformName=ANDROID
 
 Reporting disabled: using no op test run registrar
 Reflections took 1582 ms to scan 221 urls, producing 12383 keys and 53407 values
+=======
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1545 ms to scan 221 urls, producing 12392 keys and 53429 values
+
 [TestNG] Running:
   C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
 
@@ -14662,6 +15016,7 @@ Set thread-count=1
 Set data-provider-thread-count=1
 CARINA_CORE_VERSION: 1.1.3
 Reporting disabled: using no op test run registrar
+
 TEST [Testing - testInvalidUserNameAndPassword] STARTED at [14:15:30 2023-07-26]
 Starting driver session...
 Reflections took 1034 ms to scan 208 urls, producing 163 keys and 10732 values
@@ -14738,6 +15093,11 @@ com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
 INFO: '**************** Test execution summary ****************'.
 RESULT #1: TEST [Testing - testInvalidUserNameAndPassword] FAIL [screenshots=file://C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\.\reports\1690406126156/fc1f1db3-2624-4abd-acb1-65dfbc5395cd/report.html | ]
 Reflections took 103 ms to scan 10 urls, producing 122 keys and 364 values
+=======
+TEST [Testing - goToHomePageFromVideoPage] STARTED at [14:14:30 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+Reflections took 170 ms to scan 10 urls, producing 122 keys and 364 values
+
 
 ============= Basic configuration =============
 env=HOMEWORK
@@ -14745,12 +15105,17 @@ env=HOMEWORK
 crypto_key_value=*****
 =========== WebDriver configuration ===========
 url=https://www.youtube.com/
+
 selenium_url=http://localhost:4723
+=======
+selenium_url=http://localhost:4444/wd/hub
+
 auto_screenshot=true
 explicit_timeout=100
 localization_encoding=UTF-8
 language=en_US
 -------------- Driver capabilities ------------
+
 app=C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\saucelabs.apk
 deviceType=ANDROID_PHONE
 appWaitActivity=com.swaglabsmobileapp.MainActivity
@@ -14760,6 +15125,13 @@ platformName=ANDROID
 
 Reporting disabled: using no op test run registrar
 Reflections took 1585 ms to scan 221 urls, producing 12383 keys and 53407 values
+=======
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1657 ms to scan 221 urls, producing 12392 keys and 53429 values
+
 [TestNG] Running:
   C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
 
@@ -14767,6 +15139,7 @@ Set thread-count=1
 Set data-provider-thread-count=1
 CARINA_CORE_VERSION: 1.1.3
 Reporting disabled: using no op test run registrar
+
 TEST [Testing - testInvalidUserNameAndPassword] STARTED at [14:22:17 2023-07-26]
 Starting driver session...
 Reflections took 905 ms to scan 208 urls, producing 163 keys and 10732 values
@@ -14781,6 +15154,14 @@ TEST [Testing - testInvalidUserNameAndPassword] PASSED at [14:24:19 2023-07-26]
 INFO: '**************** Test execution summary ****************'.
 RESULT #1: TEST [Testing - testInvalidUserNameAndPassword] PASS [screenshots=file://C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\.\reports\1690406533708/92247304-0cb8-48f4-ac5b-6f0f9bbaaf34/report.html | ]
 Reflections took 100 ms to scan 10 urls, producing 122 keys and 364 values
+=======
+TEST [Testing - goToHomePageFromVideoPage] STARTED at [14:16:39 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - goToHomePageFromVideoPage] PASSED at [14:16:50 2023-07-27]
+INFO: '**************** Test execution summary ****************'.
+RESULT #1: TEST [Testing - goToHomePageFromVideoPage] PASS []
+Reflections took 110 ms to scan 10 urls, producing 122 keys and 364 values
+
 
 ============= Basic configuration =============
 env=HOMEWORK
@@ -14788,12 +15169,17 @@ env=HOMEWORK
 crypto_key_value=*****
 =========== WebDriver configuration ===========
 url=https://www.youtube.com/
+
 selenium_url=http://localhost:4723
+=======
+selenium_url=http://localhost:4444/wd/hub
+
 auto_screenshot=true
 explicit_timeout=100
 localization_encoding=UTF-8
 language=en_US
 -------------- Driver capabilities ------------
+
 app=C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\saucelabs.apk
 deviceType=ANDROID_PHONE
 appWaitActivity=com.swaglabsmobileapp.MainActivity
@@ -14803,6 +15189,13 @@ platformName=ANDROID
 
 Reporting disabled: using no op test run registrar
 Reflections took 1414 ms to scan 221 urls, producing 12383 keys and 53407 values
+=======
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1455 ms to scan 221 urls, producing 12392 keys and 53429 values
+
 [TestNG] Running:
   C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
 
@@ -14810,6 +15203,7 @@ Set thread-count=1
 Set data-provider-thread-count=1
 CARINA_CORE_VERSION: 1.1.3
 Reporting disabled: using no op test run registrar
+
 TEST [Testing - testValidUserNameAndPassword] STARTED at [14:24:40 2023-07-26]
 Starting driver session...
 Reflections took 972 ms to scan 208 urls, producing 163 keys and 10732 values
@@ -14824,6 +15218,19 @@ TEST [Testing - testValidUserNameAndPassword] PASSED at [14:25:02 2023-07-26]
 INFO: '**************** Test execution summary ****************'.
 RESULT #1: TEST [Testing - testValidUserNameAndPassword] PASS [screenshots=file://C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\.\reports\1690406676515/af242db5-0123-4f10-a7fa-bbc9d40ff8b7/report.html | ]
 Reflections took 109 ms to scan 10 urls, producing 122 keys and 364 values
+=======
+TEST [Testing - goToHomePageFromVideoPage] STARTED at [14:18:20 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - goToHomePageFromVideoPage] PASSED at [14:18:31 2023-07-27]
+Reporting disabled: using no op test run registrar
+TEST [Testing - goToTrendingPage] STARTED at [14:18:31 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - goToTrendingPage] PASSED at [14:18:38 2023-07-27]
+Reporting disabled: using no op test run registrar
+TEST [Testing - searchForVideo] STARTED at [14:18:38 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+Reflections took 98 ms to scan 10 urls, producing 122 keys and 364 values
+
 
 ============= Basic configuration =============
 env=HOMEWORK
@@ -14831,12 +15238,17 @@ env=HOMEWORK
 crypto_key_value=*****
 =========== WebDriver configuration ===========
 url=https://www.youtube.com/
+
 selenium_url=http://localhost:4723
+=======
+selenium_url=http://localhost:4444/wd/hub
+
 auto_screenshot=true
 explicit_timeout=100
 localization_encoding=UTF-8
 language=en_US
 -------------- Driver capabilities ------------
+
 app=C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\saucelabs.apk
 deviceType=ANDROID_PHONE
 appWaitActivity=com.swaglabsmobileapp.MainActivity
@@ -14846,6 +15258,13 @@ platformName=ANDROID
 
 Reporting disabled: using no op test run registrar
 Reflections took 1555 ms to scan 221 urls, producing 12384 keys and 53409 values
+=======
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1523 ms to scan 221 urls, producing 12392 keys and 53429 values
+
 [TestNG] Running:
   C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
 
@@ -14853,6 +15272,7 @@ Set thread-count=1
 Set data-provider-thread-count=1
 CARINA_CORE_VERSION: 1.1.3
 Reporting disabled: using no op test run registrar
+
 TEST [Testing - testInvalidUserNameAndPassword] STARTED at [14:58:59 2023-07-26]
 Starting driver session...
 Reflections took 953 ms to scan 208 urls, producing 163 keys and 10732 values
@@ -14910,6 +15330,19 @@ TEST [Testing - testValidUserNameAndPassword] PASSED at [15:05:03 2023-07-26]
 INFO: '**************** Test execution summary ****************'.
 RESULT #1: TEST [Testing - testValidUserNameAndPassword] PASS [screenshots=file://C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\.\reports\1690409077522/f16d9ad2-a1e7-400d-94da-0417f6f97075/report.html | ]
 Reflections took 152 ms to scan 10 urls, producing 122 keys and 364 values
+=======
+TEST [Testing - goToHomePageFromVideoPage] STARTED at [14:20:49 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - goToHomePageFromVideoPage] PASSED at [14:21:00 2023-07-27]
+Reporting disabled: using no op test run registrar
+TEST [Testing - goToTrendingPage] STARTED at [14:21:00 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - goToTrendingPage] PASSED at [14:21:07 2023-07-27]
+Reporting disabled: using no op test run registrar
+TEST [Testing - searchForVideo] STARTED at [14:21:07 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+Reflections took 96 ms to scan 10 urls, producing 122 keys and 364 values
+
 
 ============= Basic configuration =============
 env=HOMEWORK
@@ -14917,12 +15350,17 @@ env=HOMEWORK
 crypto_key_value=*****
 =========== WebDriver configuration ===========
 url=https://www.youtube.com/
+
 selenium_url=http://localhost:4723
+=======
+selenium_url=http://localhost:4444/wd/hub
+
 auto_screenshot=true
 explicit_timeout=100
 localization_encoding=UTF-8
 language=en_US
 -------------- Driver capabilities ------------
+
 app=C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\saucelabs.apk
 deviceType=ANDROID_PHONE
 appWaitActivity=com.swaglabsmobileapp.MainActivity
@@ -14932,6 +15370,13 @@ platformName=ANDROID
 
 Reporting disabled: using no op test run registrar
 Reflections took 1490 ms to scan 221 urls, producing 12384 keys and 53409 values
+=======
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1541 ms to scan 221 urls, producing 12392 keys and 53429 values
+
 [TestNG] Running:
   C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
 
@@ -14939,6 +15384,7 @@ Set thread-count=1
 Set data-provider-thread-count=1
 CARINA_CORE_VERSION: 1.1.3
 Reporting disabled: using no op test run registrar
+
 TEST [Testing - addAndRemoveItemsFromCart] STARTED at [15:05:20 2023-07-26]
 Starting driver session...
 Reflections took 1149 ms to scan 208 urls, producing 163 keys and 10732 values
@@ -14970,6 +15416,58 @@ com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebEle
 com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:397)
 com.solvd.apitesting.carina.demo.mobilepages.android.AndroidProductsPage.addBikeLightToCart(AndroidProductsPage.java:33)
 com.solvd.apitesting.carina.demo.main.MobileTest.addAndRemoveItemsFromCart(MobileTest.java:45)
+=======
+TEST [Testing - goToHomePageFromVideoPage] STARTED at [14:23:04 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - goToHomePageFromVideoPage] PASSED at [14:23:16 2023-07-27]
+Reporting disabled: using no op test run registrar
+TEST [Testing - goToTrendingPage] STARTED at [14:23:16 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - goToTrendingPage] PASSED at [14:23:23 2023-07-27]
+Reporting disabled: using no op test run registrar
+TEST [Testing - searchForVideo] STARTED at [14:23:23 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - searchForVideo] FAILED at [14:23:34 2023-07-27] - invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=115.0.5790.102)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [53dcb16c188cb2abd278907b6f20a656, findElement {using=css selector, value=yt-formatted-string[force-default-style class]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.102, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\sdn49\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59960}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59960/devtoo..., se:cdpVersion: 115.0.5790.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 53dcb16c188cb2abd278907b6f20a656
+
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+org.openqa.selenium.remote.RemoteWebDriver.findElement$original$TAQcsgLm(RemoteWebDriver.java:344)
+org.openqa.selenium.remote.RemoteWebDriver.findElement$original$TAQcsgLm$accessor$3SCToVr9(RemoteWebDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver$auxiliary$AWzlJD6G.call(Unknown Source)
+com.zebrunner.agent.core.webdriver.PublicMethodInvocationInterceptor.onPublicMethodInvocation(PublicMethodInvocationInterceptor.java:18)
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java)
+org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
+org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
+org.openqa.selenium.support.ui.ExpectedConditions$49.apply(ExpectedConditions.java:1396)
+org.openqa.selenium.support.ui.ExpectedConditions$49.apply(ExpectedConditions.java:1390)
+org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.waitUntil(ExtendedWebElement.java:273)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.isElementPresent(ExtendedWebElement.java:813)
+com.zebrunner.carina.webdriver.gui.AbstractPage.isPageOpened(AbstractPage.java:81)
+com.zebrunner.carina.webdriver.gui.AbstractPage.isPageOpened(AbstractPage.java:70)
+com.solvd.apitesting.carina.demo.main.WebTest.searchForVideo(WebTest.java:25)
+
 java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -14997,6 +15495,7 @@ org.testng.TestNG.runSuites(TestNG.java:1099)
 org.testng.TestNG.run(TestNG.java:1067)
 com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+
 INFO: '**************** Test execution summary ****************'.
 RESULT #1: TEST [Testing - addAndRemoveItemsFromCart] FAIL [screenshots=file://C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\.\reports\1690409116473/580b9e52-c1e9-400d-a60b-ad78f85d1a8f/report.html | ]
 Reflections took 111 ms to scan 10 urls, producing 122 keys and 364 values
@@ -15101,6 +15600,23 @@ PASS: element 'removeFromCartButton' is clicked.
 PASS: element 'removeFromCartButton' is clicked.
 Trying to quit driver 'default' on shutdown hook action!
 Reflections took 100 ms to scan 10 urls, producing 122 keys and 364 values
+=======
+Reporting disabled: using no op test run registrar
+TEST [Testing - signInWithEmail] STARTED at [14:23:34 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - signInWithEmail] PASSED at [14:23:46 2023-07-27]
+Reporting disabled: using no op test run registrar
+TEST [Testing - signInWithInvalidEmail] STARTED at [14:23:46 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - signInWithInvalidEmail] PASSED at [14:24:03 2023-07-27]
+INFO: '**************** Test execution summary ****************'.
+RESULT #1: TEST [Testing - goToHomePageFromVideoPage] PASS []
+RESULT #2: TEST [Testing - goToTrendingPage] PASS []
+RESULT #3: TEST [Testing - searchForVideo] FAIL []
+RESULT #4: TEST [Testing - signInWithEmail] PASS []
+RESULT #5: TEST [Testing - signInWithInvalidEmail] PASS []
+Reflections took 104 ms to scan 10 urls, producing 122 keys and 364 values
+
 
 ============= Basic configuration =============
 env=HOMEWORK
@@ -15108,12 +15624,17 @@ env=HOMEWORK
 crypto_key_value=*****
 =========== WebDriver configuration ===========
 url=https://www.youtube.com/
+
 selenium_url=http://localhost:4723
+=======
+selenium_url=http://localhost:4444/wd/hub
+
 auto_screenshot=true
 explicit_timeout=100
 localization_encoding=UTF-8
 language=en_US
 -------------- Driver capabilities ------------
+
 app=C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\saucelabs.apk
 deviceType=ANDROID_PHONE
 appWaitActivity=com.swaglabsmobileapp.MainActivity
@@ -15123,6 +15644,13 @@ platformName=ANDROID
 
 Reporting disabled: using no op test run registrar
 Reflections took 1503 ms to scan 221 urls, producing 12384 keys and 53409 values
+=======
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1539 ms to scan 221 urls, producing 12392 keys and 53429 values
+
 [TestNG] Running:
   C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
 
@@ -15130,6 +15658,7 @@ Set thread-count=1
 Set data-provider-thread-count=1
 CARINA_CORE_VERSION: 1.1.3
 Reporting disabled: using no op test run registrar
+
 TEST [Testing - addAndRemoveItemsFromCart] STARTED at [15:18:13 2023-07-26]
 Starting driver session...
 Reflections took 1099 ms to scan 208 urls, producing 163 keys and 10732 values
@@ -15149,6 +15678,14 @@ TEST [Testing - addAndRemoveItemsFromCart] PASSED at [15:22:07 2023-07-26]
 INFO: '**************** Test execution summary ****************'.
 RESULT #1: TEST [Testing - addAndRemoveItemsFromCart] PASS [screenshots=file://C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\.\reports\1690409889482/303cce38-6377-4971-8e26-cbb089cd47fe/report.html | ]
 Reflections took 114 ms to scan 10 urls, producing 122 keys and 364 values
+=======
+TEST [Testing - searchForVideo] STARTED at [14:25:33 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - searchForVideo] PASSED at [14:25:43 2023-07-27]
+INFO: '**************** Test execution summary ****************'.
+RESULT #1: TEST [Testing - searchForVideo] PASS []
+Reflections took 97 ms to scan 10 urls, producing 122 keys and 364 values
+
 
 ============= Basic configuration =============
 env=HOMEWORK
@@ -15156,12 +15693,17 @@ env=HOMEWORK
 crypto_key_value=*****
 =========== WebDriver configuration ===========
 url=https://www.youtube.com/
+
 selenium_url=http://localhost:4723
+=======
+selenium_url=http://localhost:4444
+
 auto_screenshot=true
 explicit_timeout=100
 localization_encoding=UTF-8
 language=en_US
 -------------- Driver capabilities ------------
+
 app=C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\saucelabs.apk
 deviceType=ANDROID_PHONE
 appWaitActivity=com.swaglabsmobileapp.MainActivity
@@ -15171,6 +15713,13 @@ platformName=ANDROID
 
 Reporting disabled: using no op test run registrar
 Reflections took 1814 ms to scan 221 urls, producing 12384 keys and 53410 values
+=======
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1731 ms to scan 221 urls, producing 12392 keys and 53429 values
+
 [TestNG] Running:
   C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
 
@@ -15178,6 +15727,7 @@ Set thread-count=1
 Set data-provider-thread-count=1
 CARINA_CORE_VERSION: 1.1.3
 Reporting disabled: using no op test run registrar
+
 TEST [Testing - loginAndLogout] STARTED at [16:00:25 2023-07-26]
 Starting driver session...
 Reflections took 1238 ms to scan 208 urls, producing 163 keys and 10732 values
@@ -15202,6 +15752,44 @@ com.solvd.apitesting.carina.demo.mobilepages.android.AndroidProductsPage.<init>(
 com.solvd.apitesting.carina.demo.mobilepages.android.AndroidHomePage.clickLoginButton(AndroidHomePage.java:38)
 com.solvd.apitesting.carina.demo.main.MobileTest.getPastHomePage(MobileTest.java:53)
 com.solvd.apitesting.carina.demo.main.MobileTest.loginAndLogout(MobileTest.java:42)
+=======
+TEST [Testing - searchForVideo] STARTED at [14:33:12 2023-07-27]
+Starting driver session...
+TEST [Testing - searchForVideo] FAILED at [14:33:13 2023-07-27] - Could not start a new session. Response code 500. Message: Could not start a new session. Error while creating session with the driver service. Stopping driver service: chromedriver located at chromedriver, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: unknown 
+Host info: host: 'DESKTOP-D994MSR', ip: '192.168.86.167'
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: unknown
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --test-type, --start-maximized, --ignore-ssl-errors], extensions: []}}]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --test-type, --start-maximized, --ignore-ssl-errors], extensions: []}}
+
+org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+com.zebrunner.carina.webdriver.listener.EventFiringSeleniumCommandExecutor.execute(EventFiringSeleniumCommandExecutor.java:52)
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+org.openqa.selenium.remote.RemoteWebDriver.startSession$original$aFcvYY2C(RemoteWebDriver.java:227)
+org.openqa.selenium.remote.RemoteWebDriver.startSession$original$aFcvYY2C$accessor$eYJaLtmT(RemoteWebDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver$auxiliary$8HLAOJFR.run(Unknown Source)
+com.zebrunner.agent.core.webdriver.StartSessionInterceptor.onSessionStart(StartSessionInterceptor.java:42)
+org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:154)
+com.zebrunner.carina.webdriver.core.factory.impl.DesktopFactory.create(DesktopFactory.java:85)
+com.zebrunner.carina.webdriver.core.factory.DriverFactory.create(DriverFactory.java:87)
+com.zebrunner.carina.webdriver.IDriverPool.createDriver(IDriverPool.java:364)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:117)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:80)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:68)
+com.solvd.apitesting.carina.demo.main.WebTest.searchForVideo(WebTest.java:23)
+
 java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -15230,8 +15818,13 @@ org.testng.TestNG.run(TestNG.java:1067)
 com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
 INFO: '**************** Test execution summary ****************'.
+
 RESULT #1: TEST [Testing - loginAndLogout] FAIL [screenshots=file://C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\.\reports\1690412420434/e9b3065d-2509-426f-8acd-af894a2ed118/report.html | ]
 Reflections took 146 ms to scan 10 urls, producing 122 keys and 364 values
+=======
+RESULT #1: TEST [Testing - searchForVideo] FAIL []
+Reflections took 104 ms to scan 10 urls, producing 122 keys and 364 values
+
 
 ============= Basic configuration =============
 env=HOMEWORK
@@ -15239,12 +15832,17 @@ env=HOMEWORK
 crypto_key_value=*****
 =========== WebDriver configuration ===========
 url=https://www.youtube.com/
+
 selenium_url=http://localhost:4723
+=======
+selenium_url=http://localhost:4444
+
 auto_screenshot=true
 explicit_timeout=100
 localization_encoding=UTF-8
 language=en_US
 -------------- Driver capabilities ------------
+
 app=C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\saucelabs.apk
 deviceType=ANDROID_PHONE
 appWaitActivity=com.swaglabsmobileapp.MainActivity
@@ -15254,6 +15852,13 @@ platformName=ANDROID
 
 Reporting disabled: using no op test run registrar
 Reflections took 1853 ms to scan 221 urls, producing 12384 keys and 53410 values
+=======
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1955 ms to scan 221 urls, producing 12392 keys and 53429 values
+
 [TestNG] Running:
   C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
 
@@ -15261,6 +15866,7 @@ Set thread-count=1
 Set data-provider-thread-count=1
 CARINA_CORE_VERSION: 1.1.3
 Reporting disabled: using no op test run registrar
+
 TEST [Testing - loginAndLogout] STARTED at [16:02:17 2023-07-26]
 Starting driver session...
 Reflections took 1204 ms to scan 208 urls, producing 163 keys and 10732 values
@@ -15285,6 +15891,44 @@ com.solvd.apitesting.carina.demo.mobilepages.android.AndroidProductsPage.<init>(
 com.solvd.apitesting.carina.demo.mobilepages.android.AndroidHomePage.clickLoginButton(AndroidHomePage.java:38)
 com.solvd.apitesting.carina.demo.main.MobileTest.getPastHomePage(MobileTest.java:53)
 com.solvd.apitesting.carina.demo.main.MobileTest.loginAndLogout(MobileTest.java:42)
+=======
+TEST [Testing - searchForVideo] STARTED at [14:34:41 2023-07-27]
+Starting driver session...
+TEST [Testing - searchForVideo] FAILED at [14:34:42 2023-07-27] - Could not start a new session. Response code 500. Message: Could not start a new session. Error while creating session with the driver service. Stopping driver service: chromedriver located at chromedriver, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: unknown 
+Host info: host: 'DESKTOP-D994MSR', ip: '192.168.86.167'
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: unknown
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --test-type, --start-maximized, --ignore-ssl-errors], extensions: []}}]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --test-type, --start-maximized, --ignore-ssl-errors], extensions: []}}
+
+org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+com.zebrunner.carina.webdriver.listener.EventFiringSeleniumCommandExecutor.execute(EventFiringSeleniumCommandExecutor.java:52)
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+org.openqa.selenium.remote.RemoteWebDriver.startSession$original$yTPXK76W(RemoteWebDriver.java:227)
+org.openqa.selenium.remote.RemoteWebDriver.startSession$original$yTPXK76W$accessor$zq23xx1c(RemoteWebDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver$auxiliary$aTOXX77z.run(Unknown Source)
+com.zebrunner.agent.core.webdriver.StartSessionInterceptor.onSessionStart(StartSessionInterceptor.java:42)
+org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:154)
+com.zebrunner.carina.webdriver.core.factory.impl.DesktopFactory.create(DesktopFactory.java:85)
+com.zebrunner.carina.webdriver.core.factory.DriverFactory.create(DriverFactory.java:87)
+com.zebrunner.carina.webdriver.IDriverPool.createDriver(IDriverPool.java:364)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:117)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:80)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:68)
+com.solvd.apitesting.carina.demo.main.WebTest.searchForVideo(WebTest.java:23)
+
 java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -15313,8 +15957,13 @@ org.testng.TestNG.run(TestNG.java:1067)
 com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
 INFO: '**************** Test execution summary ****************'.
+
 RESULT #1: TEST [Testing - loginAndLogout] FAIL [screenshots=file://C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\.\reports\1690412533192/cbd3e499-c993-4f20-8b78-9ec01b8dcb5d/report.html | ]
 Reflections took 141 ms to scan 10 urls, producing 122 keys and 364 values
+=======
+RESULT #1: TEST [Testing - searchForVideo] FAIL []
+Reflections took 109 ms to scan 10 urls, producing 122 keys and 364 values
+
 
 ============= Basic configuration =============
 env=HOMEWORK
@@ -15322,12 +15971,17 @@ env=HOMEWORK
 crypto_key_value=*****
 =========== WebDriver configuration ===========
 url=https://www.youtube.com/
+
 selenium_url=http://localhost:4723
+=======
+selenium_url=http://localhost:4444
+
 auto_screenshot=true
 explicit_timeout=100
 localization_encoding=UTF-8
 language=en_US
 -------------- Driver capabilities ------------
+
 app=C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\saucelabs.apk
 deviceType=ANDROID_PHONE
 appWaitActivity=com.swaglabsmobileapp.MainActivity
@@ -15337,6 +15991,13 @@ platformName=ANDROID
 
 Reporting disabled: using no op test run registrar
 Reflections took 1958 ms to scan 221 urls, producing 12384 keys and 53410 values
+=======
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1733 ms to scan 221 urls, producing 12392 keys and 53429 values
+
 [TestNG] Running:
   C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
 
@@ -15344,6 +16005,7 @@ Set thread-count=1
 Set data-provider-thread-count=1
 CARINA_CORE_VERSION: 1.1.3
 Reporting disabled: using no op test run registrar
+
 TEST [Testing - testInvalidUserNameAndPassword] STARTED at [16:03:37 2023-07-26]
 Starting driver session...
 Reflections took 1179 ms to scan 208 urls, producing 163 keys and 10732 values
@@ -15398,6 +16060,14 @@ com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
 INFO: '**************** Test execution summary ****************'.
 RESULT #1: TEST [Testing - testInvalidUserNameAndPassword] FAIL [screenshots=file://C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\.\reports\1690412612825/c0456052-33db-45d7-b065-d43f9c903e67/report.html | ]
 Reflections took 124 ms to scan 10 urls, producing 122 keys and 364 values
+=======
+TEST [Testing - searchForVideo] STARTED at [14:49:26 2023-07-27]
+INFO: opening url 'https://www.youtube.com/'
+TEST [Testing - searchForVideo] PASSED at [14:49:37 2023-07-27]
+INFO: '**************** Test execution summary ****************'.
+RESULT #1: TEST [Testing - searchForVideo] PASS []
+Reflections took 144 ms to scan 10 urls, producing 122 keys and 364 values
+
 
 ============= Basic configuration =============
 env=HOMEWORK
@@ -15405,12 +16075,17 @@ env=HOMEWORK
 crypto_key_value=*****
 =========== WebDriver configuration ===========
 url=https://www.youtube.com/
+
 selenium_url=http://localhost:4723
+=======
+selenium_url=http://localhost:4444
+
 auto_screenshot=true
 explicit_timeout=100
 localization_encoding=UTF-8
 language=en_US
 -------------- Driver capabilities ------------
+
 app=C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\saucelabs.apk
 deviceType=ANDROID_PHONE
 appWaitActivity=com.swaglabsmobileapp.MainActivity
@@ -15420,6 +16095,13 @@ platformName=ANDROID
 
 Reporting disabled: using no op test run registrar
 Reflections took 1675 ms to scan 221 urls, producing 12384 keys and 53410 values
+=======
+browserName=chrome
+===============================================
+
+Reporting disabled: using no op test run registrar
+Reflections took 1833 ms to scan 221 urls, producing 12392 keys and 53429 values
+
 [TestNG] Running:
   C:\Users\sdn49\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
 
@@ -15427,6 +16109,7 @@ Set thread-count=1
 Set data-provider-thread-count=1
 CARINA_CORE_VERSION: 1.1.3
 Reporting disabled: using no op test run registrar
+
 TEST [Testing - loginAndLogout] STARTED at [16:05:12 2023-07-26]
 Starting driver session...
 Reflections took 1069 ms to scan 208 urls, producing 163 keys and 10732 values
@@ -15450,6 +16133,44 @@ com.solvd.apitesting.carina.demo.mobilepages.common.ProductsPageBase.<init>(Prod
 com.solvd.apitesting.carina.demo.mobilepages.android.AndroidProductsPage.<init>(AndroidProductsPage.java:25)
 com.solvd.apitesting.carina.demo.mobilepages.android.AndroidHomePage.clickLoginButton(AndroidHomePage.java:38)
 com.solvd.apitesting.carina.demo.main.MobileTest.loginAndLogout(MobileTest.java:44)
+=======
+TEST [Testing - searchForVideo] STARTED at [14:54:21 2023-07-27]
+Starting driver session...
+TEST [Testing - searchForVideo] FAILED at [14:54:23 2023-07-27] - Could not start a new session. Response code 500. Message: Could not start a new session. Error while creating session with the driver service. Stopping driver service: chromedriver located at chromedriver, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: unknown 
+Host info: host: 'DESKTOP-D994MSR', ip: '192.168.86.167'
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: unknown
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --test-type, --start-maximized, --ignore-ssl-errors], extensions: []}}]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --test-type, --start-maximized, --ignore-ssl-errors], extensions: []}}
+
+org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+com.zebrunner.carina.webdriver.listener.EventFiringSeleniumCommandExecutor.execute(EventFiringSeleniumCommandExecutor.java:52)
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+org.openqa.selenium.remote.RemoteWebDriver.startSession$original$1lVyYc4e(RemoteWebDriver.java:227)
+org.openqa.selenium.remote.RemoteWebDriver.startSession$original$1lVyYc4e$accessor$tUVObgkW(RemoteWebDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver$auxiliary$SLevADNb.run(Unknown Source)
+com.zebrunner.agent.core.webdriver.StartSessionInterceptor.onSessionStart(StartSessionInterceptor.java:42)
+org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:154)
+com.zebrunner.carina.webdriver.core.factory.impl.DesktopFactory.create(DesktopFactory.java:85)
+com.zebrunner.carina.webdriver.core.factory.DriverFactory.create(DriverFactory.java:87)
+com.zebrunner.carina.webdriver.IDriverPool.createDriver(IDriverPool.java:364)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:117)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:80)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:68)
+com.solvd.apitesting.carina.demo.main.WebTest.searchForVideo(WebTest.java:24)
+
 java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -15478,6 +16199,7 @@ org.testng.TestNG.run(TestNG.java:1067)
 com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
 INFO: '**************** Test execution summary ****************'.
+
 RESULT #1: TEST [Testing - loginAndLogout] FAIL [screenshots=file://C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\.\reports\1690412708098/d5e290bc-e1f8-4e6f-864b-b578123b6805/report.html | ]
 Reflections took 143 ms to scan 10 urls, producing 122 keys and 364 values
 
@@ -17948,3 +18670,6 @@ PASS: element 'lowToHighPriceOption' is clicked.
 TEST [Testing - sortLowToHighPrice] PASSED at [15:18:29 2023-07-31]
 INFO: '**************** Test execution summary ****************'.
 RESULT #1: TEST [Testing - sortLowToHighPrice] PASS [screenshots=file://C:\Users\sdn49\OneDrive\Desktop\Solvd\Testing\Testing\.\reports\1690841878334/5e57960c-851b-499f-a592-bdb30a251451/report.html | ]
+
+RESULT #1: TEST [Testing - searchForVideo] FAIL []
+

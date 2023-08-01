@@ -1,18 +1,23 @@
 package com.solvd.apitesting.carina.demo.webpages;
 
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
-import com.zebrunner.carina.webdriver.gui.AbstractPage;
+import com.zebrunner.carina.webdriver.decorator.PageOpeningStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-public class VideoPage extends AbstractPage {
+public class VideoPage extends ParentPage {
     @FindBy(css = "#logo")
     private ExtendedWebElement homeButton;
+    @FindBy(css = "yt-formatted-string[force-default-style]")
+    private ExtendedWebElement videoTitle;
 
     public VideoPage(WebDriver webDriver) {
         super(webDriver);
+        setPageOpeningStrategy(PageOpeningStrategy.BY_ELEMENT);
+        setUiLoadedMarker(videoTitle);
     }
-    public void goToHomePage() {
+    public HomePage goToHomePage() {
         homeButton.click();
+        return new HomePage(getDriver());
     }
 }

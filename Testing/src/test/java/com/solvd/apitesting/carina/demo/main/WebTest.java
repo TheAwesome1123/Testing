@@ -1,16 +1,14 @@
 package com.solvd.apitesting.carina.demo.main;
 
-import com.solvd.apitesting.carina.demo.webpages.HomePage;
-import com.solvd.apitesting.carina.demo.webpages.VideoPage;
+import com.solvd.apitesting.carina.demo.webpages.*;
 import com.solvd.apitesting.carina.demo.web.services.HomePageService;
-import com.solvd.apitesting.carina.demo.webpages.ResultsPage;
-import com.solvd.apitesting.carina.demo.webpages.SignInPage;
 import com.solvd.apitesting.carina.demo.web.services.ResultsPageService;
 import com.solvd.apitesting.carina.demo.web.services.SignInPageService;
 import com.solvd.apitesting.carina.demo.web.services.VideoPageService;
 import com.zebrunner.carina.core.IAbstractTest;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -23,8 +21,10 @@ public class WebTest implements IAbstractTest {
 
     @Test
     public void searchForVideo() {
-        ResultsPage resultsPage = RESULTS_PAGE_SERVICE.getToResultsPage("mute city");
-        resultsPage.clickOnVideo();
+        HomePage homePage = new HomePage(getDriver());
+        ResultsPage resultsPage = homePage.makeSearch("mute city");
+        VideoPage videoPage = resultsPage.clickOnVideo();
+        Assert.assertTrue(videoPage.isPageOpened());
     }
 
     @Test
@@ -44,13 +44,15 @@ public class WebTest implements IAbstractTest {
     @Test
     public void goToHomePageFromVideoPage() {
         VideoPage videoPage = VIDEO_PAGE_SERVICE.getVideoPage();
-        videoPage.goToHomePage();
+        HomePage homePage = videoPage.goToHomePage();
+        Assert.assertTrue(homePage.isPageOpened());
     }
 
     @Test
     public void goToTrendingPage() {
         HomePage homePage = HOME_PAGE_SERVICE.openHomePage();
-        homePage.clickHotbar();
-        homePage.clickTrendingButton();
+        homePage.clickMenuButton();
+        TrendingPage trendingPage = homePage.clickTrendingButton();
+        Assert.assertTrue(trendingPage.isPageOpened());
     }
 }

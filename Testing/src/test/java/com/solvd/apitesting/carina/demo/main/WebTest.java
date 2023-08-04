@@ -21,7 +21,7 @@ public class WebTest implements IAbstractTest {
 
     @Test
     public void searchForVideo() {
-        HomePage homePage = new HomePage(getDriver());
+        HomePage homePage = HOME_PAGE_SERVICE.openHomePage();
         ResultsPage resultsPage = homePage.makeSearch("mute city");
         VideoPage videoPage = resultsPage.clickOnVideo();
         Assert.assertTrue(videoPage.isPageOpened());

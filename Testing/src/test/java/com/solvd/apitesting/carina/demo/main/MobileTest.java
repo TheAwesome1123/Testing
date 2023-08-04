@@ -1,6 +1,6 @@
 package com.solvd.apitesting.carina.demo.main;
 
-import com.solvd.apitesting.carina.demo.mobilepages.common.*;
+import com.solvd.apitesting.carina.demo.mobiletesting.common.*;
 import com.zebrunner.carina.core.IAbstractTest;
 import com.zebrunner.carina.utils.mobile.IMobileUtils;
 import org.testng.Assert;
@@ -24,8 +24,9 @@ public class MobileTest implements IAbstractTest, IMobileUtils {
         ProductsPageBase productsPage = getPastHomePage("standard_user", "secret_sauce");
         Assert.assertTrue(productsPage.isPageOpened());
 
-        productsPage.addBackpackToCart();
-        productsPage.addBikeLightToCart();
+        productsPage.addProductToCart("Sauce Labs Backpack");
+        productsPage.addProductToCart("Sauce Labs Bike Light");
+
         CartPageBase cartPage = productsPage.goToCart();
         Assert.assertTrue(cartPage.isPageOpened());
 
@@ -47,7 +48,7 @@ public class MobileTest implements IAbstractTest, IMobileUtils {
         ProductsPageBase productsPage = getPastHomePage("standard_user", "secret_sauce");
         Assert.assertTrue(productsPage.isPageOpened());
 
-        productsPage.addBackpackToCart();
+        productsPage.addProductToCart("Sauce Labs Backpack");
         CartPageBase cartPage = productsPage.goToCart();
         Assert.assertTrue(cartPage.isPageOpened());
 

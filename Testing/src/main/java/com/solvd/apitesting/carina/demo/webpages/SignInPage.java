@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 public class SignInPage extends AbstractPage {
-    @FindBy(xpath = "/html/body/div[1]/div[1]/div[2]/div/c-wiz/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div/div[1]/div/div[1]/input")
+    @FindBy(css = "input[type=\"email\"]")
     private ExtendedWebElement emailInput;
     @FindBy(xpath = "//*[@class=\"jibhHc\"]")
     private ExtendedWebElement emailErrorMessage;

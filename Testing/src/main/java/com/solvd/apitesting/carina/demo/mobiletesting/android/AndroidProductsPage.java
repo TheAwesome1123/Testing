@@ -2,8 +2,10 @@ package com.solvd.apitesting.carina.demo.mobiletesting.android;
 
 import com.solvd.apitesting.carina.demo.mobiletesting.common.*;
 import com.zebrunner.carina.utils.factory.DeviceType;
+import com.zebrunner.carina.utils.mobile.IMobileUtils;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import com.zebrunner.carina.webdriver.decorator.PageOpeningStrategy;
+import org.apache.poi.ss.usermodel.Row;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
@@ -11,10 +13,10 @@ import org.testng.Assert;
 import java.util.List;
 
 @DeviceType(pageType = DeviceType.Type.ANDROID_PHONE, parentClass = ProductsPageBase.class)
-public class AndroidProductsPage extends ProductsPageBase {
+public class AndroidProductsPage extends ProductsPageBase implements IMobileUtils {
     @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]")
     private HeaderBar headerBar;
-    @FindBy(xpath = "//android.widget.ScrollView[@content-desc=\"test-PRODUCTS\"]")
+    @FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"test-Item\"]")
     private List<Product> products;
     @FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"test-Modal Selector Button\"]/android.view.ViewGroup")
     private ExtendedWebElement sortButton;
@@ -28,47 +30,32 @@ public class AndroidProductsPage extends ProductsPageBase {
     }
 
     @Override
-    public void addProductToCart(String name) {
-        for (Product product : products) {
-            if(product.getName().equals(name)) {
+    public void addProduct(String name) {
+        for(Product product : products) {
+            if(product.getProductName().equals(name)) {
                 product.clickAddToCartButton();
+                break;
             }
         }
     }
 
     @Override
     public CartPageBase goToCart() {
-        headerBar.getCartButton().click();
-        return new AndroidCartPage(getDriver());
+        return headerBar.clickCartButton();
     }
 
     @Override
-    public HomePageBase goToMenu() {
-        MenuOptions menuOptions = headerBar.clickMenuButton();
-        menuOptions.clickLogoutButton();
-        return new AndroidHomePage(getDriver());
+    public MenuOptions goToMenu() {
+        return headerBar.goToMenu();
     }
 
     @Override
     public void sortFromLowToHighPrice() {
         sortButton.click();
         lowToHighPriceOption.click();
-        Assert.assertEquals(products.get(0).getName(), "Sauce Labs Onesie");
     }
 
-    public ExtendedWebElement getSortButton() {
-        return sortButton;
-    }
-
-    public void setSortButton(ExtendedWebElement sortButton) {
-        this.sortButton = sortButton;
-    }
-
-    public ExtendedWebElement getLowToHighPriceOption() {
-        return lowToHighPriceOption;
-    }
-
-    public void setLowToHighPriceOption(ExtendedWebElement lowToHighPriceOption) {
-        this.lowToHighPriceOption = lowToHighPriceOption;
+    public boolean isOnesiePresent() {
+        return products.get(0).getProductName().equals("Sauce Labs Onesie");
     }
 }

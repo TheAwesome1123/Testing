@@ -14,16 +14,8 @@ public class MenuOptions extends AbstractUIObject {
         super(driver);
     }
 
-    public HomePageBase clickLogoutButton() {
+    public HomePageBase goToHomePage() {
         logoutButton.click();
         return new AndroidHomePage(getDriver());
-    }
-
-    public ExtendedWebElement getLogoutButton() {
-        return logoutButton;
-    }
-
-    public void setLogoutButton(ExtendedWebElement logoutButton) {
-        this.logoutButton = logoutButton;
     }
 }

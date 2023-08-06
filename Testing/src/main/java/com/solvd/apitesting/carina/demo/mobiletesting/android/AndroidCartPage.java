@@ -11,7 +11,7 @@ import org.openqa.selenium.support.FindBy;
 
 @DeviceType(pageType = DeviceType.Type.ANDROID_PHONE, parentClass = AndroidCartPage.class)
 public class AndroidCartPage extends CartPageBase {
-    @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.TextView")
+    @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]")
     private ExtendedWebElement cartHeader;
     @FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"test-REMOVE\"]/android.widget.TextView")
     private ExtendedWebElement removeFromCartButton;
@@ -43,5 +43,10 @@ public class AndroidCartPage extends CartPageBase {
     public ProductsPageBase continueShopping() {
         continueShoppingButton.click();
         return new AndroidProductsPage(getDriver());
+    }
+
+    @Override
+    public boolean isRemoveButtonPresent() {
+        return removeFromCartButton.isElementPresent();
     }
 }

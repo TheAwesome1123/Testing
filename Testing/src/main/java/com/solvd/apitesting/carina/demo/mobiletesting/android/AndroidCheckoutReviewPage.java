@@ -21,12 +21,4 @@ public class AndroidCheckoutReviewPage extends CheckoutReviewPageBase {
     public boolean isOverviewPresent() {
         return checkoutOverview.isElementPresent();
     }
-
-    public ExtendedWebElement getCheckoutOverview() {
-        return checkoutOverview;
-    }
-
-    public void setCheckoutOverview(ExtendedWebElement checkoutOverview) {
-        this.checkoutOverview = checkoutOverview;
-    }
 }

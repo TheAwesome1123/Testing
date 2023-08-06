@@ -1,5 +1,6 @@
 package com.solvd.apitesting.carina.demo.mobiletesting.common;
 
+import com.solvd.apitesting.carina.demo.mobiletesting.android.AndroidCartPage;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import com.zebrunner.carina.webdriver.gui.AbstractUIObject;
 import org.openqa.selenium.SearchContext;
@@ -16,24 +17,13 @@ public class HeaderBar extends AbstractUIObject {
         super(driver, searchContext);
     }
 
-    public MenuOptions clickMenuButton() {
+    public MenuOptions goToMenu() {
         menuButton.click();
         return new MenuOptions(getDriver());
     }
 
-    public ExtendedWebElement getMenuButton() {
-        return menuButton;
-    }
-
-    public void setMenuButton(ExtendedWebElement menuButton) {
-        this.menuButton = menuButton;
-    }
-
-    public ExtendedWebElement getCartButton() {
-        return cartButton;
-    }
-
-    public void setCartButton(ExtendedWebElement cartButton) {
-        this.cartButton = cartButton;
+    public CartPageBase clickCartButton() {
+        cartButton.click();
+        return new AndroidCartPage(getDriver());
     }
 }

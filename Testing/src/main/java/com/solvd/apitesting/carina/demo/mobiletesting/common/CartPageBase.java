@@ -6,9 +6,6 @@ import com.zebrunner.carina.webdriver.gui.AbstractPage;
 import org.openqa.selenium.WebDriver;
 
 public abstract class CartPageBase extends AbstractPage {
-    private ExtendedWebElement cartHeader;
-    private ExtendedWebElement removeFromCartButton;
-
     public CartPageBase(WebDriver driver) {
         super(driver);
         setPageOpeningStrategy(PageOpeningStrategy.BY_ELEMENT);
@@ -17,20 +14,5 @@ public abstract class CartPageBase extends AbstractPage {
     public abstract void removeItems();
     public abstract CheckoutInfoPageBase goToCheckout();
     public abstract ProductsPageBase continueShopping();
-
-    public ExtendedWebElement getCartHeader() {
-        return cartHeader;
-    }
-
-    public void setCartHeader(ExtendedWebElement cartHeader) {
-        this.cartHeader = cartHeader;
-    }
-
-    public ExtendedWebElement getRemoveFromCartButton() {
-        return removeFromCartButton;
-    }
-
-    public void setRemoveFromCartButton(ExtendedWebElement removeFromCartButton) {
-        this.removeFromCartButton = removeFromCartButton;
-    }
+    public abstract boolean isRemoveButtonPresent();
 }

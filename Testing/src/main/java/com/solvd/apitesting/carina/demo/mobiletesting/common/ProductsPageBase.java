@@ -10,8 +10,10 @@ public abstract class ProductsPageBase extends AbstractPage {
         setPageOpeningStrategy(PageOpeningStrategy.BY_ELEMENT);
     }
 
-    public abstract void addProductToCart(String name);
     public abstract CartPageBase goToCart();
-    public abstract HomePageBase goToMenu();
+    public abstract MenuOptions goToMenu();
     public abstract void sortFromLowToHighPrice();
+    public abstract boolean isOnesiePresent();
+    public abstract void addProduct(String name);
+
 }

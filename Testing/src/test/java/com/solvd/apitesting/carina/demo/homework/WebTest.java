@@ -8,6 +8,7 @@ import com.solvd.apitesting.carina.demo.web.services.VideoPageService;
 import com.zebrunner.carina.core.IAbstractTest;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -53,5 +54,16 @@ public class WebTest implements IAbstractTest {
         homePage.clickMenuButton();
         TrendingPage trendingPage = homePage.clickTrendingButton();
         Assert.assertTrue(trendingPage.isPageOpened());
+    }
+
+    @Test
+    public void testInvalidCredentials() {
+        InterviewHomePage homePage = new InterviewHomePage(new ChromeDriver());
+        homePage.open();
+
+        InterviewLoginPage loginPage = homePage.goToLoginPage();
+        Assert.assertTrue(loginPage.isPageOpened());
+        loginPage.inputCredentials("test@gmail.com", "test");
+        Assert.assertTrue(loginPage.isErrorMessagePresent());
     }
 }

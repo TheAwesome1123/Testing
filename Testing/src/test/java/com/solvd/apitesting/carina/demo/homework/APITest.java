@@ -29,7 +29,7 @@ public class APITest implements IAbstractTest {
     @Test
     public static void testPostPost() {
         PostPost postPost = new PostPost("api_url");
-        postPost.setProperties("api/users/_post/PostRequest.properties");
+        //postPost.setProperties("api/users/_post/PostRequest.properties");
         postPost.callAPIExpectSuccess();
         postPost.validateResponse();
     }
